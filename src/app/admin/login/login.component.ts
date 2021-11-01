@@ -5,6 +5,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
+
 })
 export class LoginComponent implements OnInit {
   reactiveForm: FormGroup;
@@ -29,6 +30,8 @@ export class LoginComponent implements OnInit {
       return;
     }
     console.log("value=", this.reactiveForm.value); 
+    this.reactiveForm.reset();
+    this.submitted=false;
   }
 
 }

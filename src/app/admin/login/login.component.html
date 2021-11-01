@@ -1,19 +1,26 @@
-<p>login works!</p>
-<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" >
-    <label>Email Id</label>
-    <input type="text" name="email" placeholder="youremail@yahoo.com" formControlName="email"> 
-    <br>
-    <div *ngIf="submitted && f.email.errors">
-        <span style="color: red;" *ngIf="f.email.errors.required ">Please enter Email</span>
+<div class="container">
+    <div class="row">
+        <div class="col md-6">
+            <h2 class="text-danger">login works!</h2>
+            <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" >
+                <label>Email Id</label>
+                <input type="text" name="email" placeholder="youremail@yahoo.com" formControlName="email"> 
+                <br>
+                <div *ngIf="submitted && f.email.errors">
+                    <span style="color: red;" *ngIf="f.email.errors.required ">Please enter Email</span>
+                </div>
+                <br>
+                <label>PASSWORD</label>
+                <input type="password" name="password" placeholder="******" formControlName="password"> 
+                <br>
+                <div *ngIf="submitted && f.password.errors">
+                    <span style="color: red;" *ngIf="f.password.errors.required ">Please enter Password</span>
+                    <span style="color: red;" *ngIf="f.password.errors.minlength ">Password must be 3 letter</span>
+                </div>
+                <br>
+                <button >CONTINUE</button>
+            </form>
+        </div>
     </div>
-    <br>
-    <label>PASSWORD</label>
-    <input type="password" name="password" placeholder="******" formControlName="password"> 
-    <br>
-    <div *ngIf="submitted && f.password.errors">
-        <span style="color: red;" *ngIf="f.password.errors.required ">Please enter Password</span>
-        <span style="color: red;" *ngIf="f.password.errors.minlength ">Password must be 3 letter</span>
-    </div>
-    <br>
-    <button >CONTINUE</button>
-</form>
+</div>
+

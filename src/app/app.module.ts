@@ -4,14 +4,17 @@ import { AdminModule } from './admin/admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DashbordComponent } from './dashbord/dashbord.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashbordComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,AdminModule
+    AppRoutingModule,AdminModule, NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
