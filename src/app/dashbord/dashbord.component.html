@@ -1,3 +1,4 @@
+<div >
 <nav id="navbar-example2" class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">WPS Expance</a>
     <ul class="nav nav-pills">
@@ -5,10 +6,10 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Account</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="">Profile</a>
-          <a class="dropdown-item" href="">Change Password</a>
+          <a class="dropdown-item" [routerLink]="">Profile</a>
+          <a class="dropdown-item"[routerLink]="">Change Password</a>
           <!-- <div role="separator" class="dropdown-divider"></div> -->
-          <a class="dropdown-item" href="">Logout</a>
+          <a class="dropdown-item" [routerLink]="" (click)="signout()">Logout</a>
         </div>
       </li>
     </ul>
@@ -17,16 +18,16 @@
 
 
   <!-- Button trigger modal -->
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" *ngIf="false">
+ <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >
     Add Category
-  </button>
+  </button> -->
   
-  <!-- Modal -->
+  <!-- Modal use inside side bar in Add Catogary button -->
    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Add Catogary</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -125,3 +126,5 @@
       </li> -->
     </ul>
   </div>
+
+</div>

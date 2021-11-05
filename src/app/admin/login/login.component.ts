@@ -39,9 +39,9 @@ export class LoginComponent implements OnInit {
       const jsonData = JSON.stringify(this.submitted);
       sessionStorage.setItem('submitted', jsonData);
 
-      const getArrayValue = sessionStorage.getItem('submitted');
-      const myId1= JSON.parse(getArrayValue || '{}');
-      console.log("Session Work" + myId1);
+      // const getArrayValue = sessionStorage.getItem('submitted');
+      // const myId1= JSON.parse(getArrayValue || '{}');
+      // console.log("Session Work" + myId1);
 
 
       this.userDatas.user().subscribe(result =>{
@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
         alert("please enter the right username and passWord");
       }
       else{
-        alert("sucess")
+        // alert("sucess")
         this.router.navigate(['dashbord']);
       
       }
