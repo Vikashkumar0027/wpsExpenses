@@ -1,6 +1,187 @@
 {
-    "posts": [
-      { "email":"vk112004@gmail.com","password":"123456"}
-    ]
-   
-  }
+  "posts": [
+    {
+      "email": "vk112004@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "catogary": [
+    {
+      "catogary": "nutan ",
+      "description": "5000",
+      "id": 3
+    },
+    {
+      "catogary": "Travelling",
+      "description": "Group tour",
+      "id": 4
+    },
+    {
+      "catogary": "hallo",
+      "description": "20 thousendas",
+      "id": 5
+    },
+    {
+      "catogary": "fhdhdffa",
+      "description": "fgf",
+      "id": 12
+    },
+    {
+      "catogary": "adfafd",
+      "description": "fgfsadfdsafa",
+      "id": 13
+    },
+    {
+      "catogary": "adfafd",
+      "description": "fgfsadfdsafa",
+      "id": 14
+    },
+    {
+      "catogary": "archan",
+      "description": "fgfsadfdsafa",
+      "id": 15
+    },
+    {
+      "catogary": "sdg",
+      "description": "fgfsf",
+      "id": 16
+    },
+    {
+      "catogary": "saf",
+      "description": "afa",
+      "id": 17
+    },
+    {
+      "catogary": "fadfa",
+      "description": "afa",
+      "id": 18
+    },
+    {
+      "catogary": "Arrif",
+      "description": "20000",
+      "id": 19
+    },
+    {
+      "catogary": "I",
+      "description": "SD",
+      "id": 21
+    },
+    {
+      "catogary": "hllo saniya",
+      "description": "kfdaS",
+      "id": 22
+    },
+    {
+      "catogary": "Archana Sharma",
+      "description": "30000",
+      "id": 28
+    },
+    {
+      "catogary": "Dipanshu",
+      "description": "300",
+      "id": 29
+    },
+    {
+      "catogary": "hallo",
+      "description": "qwdw",
+      "id": 34
+    },
+    {
+      "catogary": "af",
+      "description": "sadfa",
+      "id": 35
+    },
+    {
+      "catogary": "child",
+      "description": "fgs",
+      "id": 36
+    },
+    {
+      "catogary": "sds",
+      "description": "sadsad",
+      "id": 37
+    },
+    {
+      "catogary": "dffdddfdfd",
+      "description": "dfdfdfdfdfdefdf",
+      "id": 38
+    },
+    {
+      "catogary": "Repair",
+      "description": "Office Repair expense",
+      "id": 39
+    },
+    {
+      "catogary": "dvd",
+      "description": "sv",
+      "id": 40
+    },
+    {
+      "catogary": "fggggfg",
+      "description": "sdg",
+      "id": 41
+    },
+    {
+      "catogary": "Monika",
+      "description": "23123",
+      "id": 42
+    }
+  ],
+  "products": [
+    {
+      "title": "Apple 16",
+      "image": "https://image.shutterstock.com/image-photo/chiang-mai-thailand-dec-202015-600w-355783916.jpg",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "title": "moto",
+      "image": "https://image.shutterstock.com/image-vector/mobile-ui-ux-korbon-gold-600w-1921530566.jpg"
+    },
+    {
+      "title": "moto archana",
+      "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note-8-sm-n950-4.jpg",
+      "id": 6
+    },
+    {
+      "title": "Mobile 1",
+      "image": "https://qph.fs.quoracdn.net/main-qimg-700d9f8e1268a4483f9be9826b1dec43",
+      "id": 7
+    },
+    {
+      "title": "जीवन में सफल होने वाला व्यक्ति ज्यादा सोचता नहीं",
+      "image": "https://image.shutterstock.com/image-photo/chiang-mai-thailand-dec-202015-600w-355783916.jpg",
+      "id": 9
+    },
+    {
+      "title": "hallo",
+      "image": "vikash",
+      "id": 10
+    },
+    {
+      "title": "hjhsdhh",
+      "image": "",
+      "id": 11
+    },
+    {
+      "title": "saasfsaA",
+      "image": "https://image.shutterstock.com/image-photo/chiang-mai-thailand-dec-202015-600w-355783916.jpg",
+      "id": 12
+    },
+    {
+      "title": "PURAN",
+      "image": "PURAN",
+      "id": 13
+    },
+    {
+      "title": "sdfs",
+      "image": "sdfsdf",
+      "id": 14
+    },
+    {
+      "title": "Archana",
+      "image": "sdfhhg",
+      "id": 15
+    }
+  ]
+}

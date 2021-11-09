@@ -1,0 +1,17 @@
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">WPS Expance</a>
+    <ul class="nav nav-pills">
+  
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">My Account</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" [routerLink]="">Profile</a>
+          <a class="dropdown-item" [routerLink]="">Change Password</a>
+          <!-- <div role="separator" class="dropdown-divider"></div> -->
+          <a class="dropdown-item" [routerLink]="" (click)="signout()">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  

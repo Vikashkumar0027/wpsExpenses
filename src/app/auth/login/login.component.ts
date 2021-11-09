@@ -7,9 +7,9 @@ import { LoginApiService } from 'src/app/services/login-api.service';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
-
 })
 export class LoginComponent implements OnInit {
+
   reactiveForm: FormGroup;
   submitted:boolean=false;
   myId:any;
@@ -57,8 +57,8 @@ export class LoginComponent implements OnInit {
         alert("please enter the right username and passWord");
       }
       else{
-        // alert("sucess")
-        this.router.navigate(['dashbord']);
+        alert("sucess")
+        this.router.navigate(['app']);
       
       }
 
@@ -74,3 +74,4 @@ export class LoginComponent implements OnInit {
   }
 
 }
+
