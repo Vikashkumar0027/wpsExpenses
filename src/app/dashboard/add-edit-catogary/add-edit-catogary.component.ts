@@ -11,7 +11,7 @@ import { LoginApiService } from 'src/app/services/login-api.service';
 export class AddEditCatogaryComponent implements OnInit {
   @Input() modalObject: any;
   @Output() closeAddEditModal = new EventEmitter();
-   hide:boolean=true;
+  //  hide:boolean=true;
   reactiveForm: FormGroup;
   constructor(
     private getService: LoginApiService,
@@ -57,7 +57,7 @@ export class AddEditCatogaryComponent implements OnInit {
       .update(this.modalObject.id,this.reactiveForm.getRawValue())
       .subscribe( ()=>{
         // alert("Suceess")
-        this.hide=false;
+        
 
         this.router.navigate(['/app/expense'])
       })
@@ -65,6 +65,7 @@ export class AddEditCatogaryComponent implements OnInit {
     // console.log(this.reactiveForm.value);
 
     this.reactiveForm.reset();
+    // $('#exampleModalCenter').modal('hide');
   }
   closeModal() { //its for ouput decorator 
     this.closeAddEditModal.emit('close')
