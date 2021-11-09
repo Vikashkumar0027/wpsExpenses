@@ -17,7 +17,7 @@ import { AddCatogaryComponent } from './add-catogary/add-catogary.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,AdminModule, NgbModule,HttpClientModule
+    AppRoutingModule, AdminModule, NgbModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
