@@ -5,36 +5,37 @@
       "password": "123456"
     }
   ],
-  "catogary": [
+  "expense": [
     {
-      "catogary": "nutan ",
-      "description": "5000",
-      "id": 3
-    },
-    {
-      "catogary": "Travelling",
-      "description": "Group tour",
+      "NameExp": "mohankiyta  mohan",
+      "category": "adfafd",
+      "PaymentDate": "2021-11-21",
+      "Total_Amount": 32,
       "id": 4
     },
     {
-      "catogary": "hallo",
-      "description": "20 thousendas",
+      "NameExp": "White  daru",
+      "category": "Arrif",
+      "PaymentDate": "2021-11-28",
+      "Total_Amount": 121212,
       "id": 5
+    }
+  ],
+  "catogary": [
+    {
+      "catogary": "Party of the End",
+      "description": "100000000000",
+      "id": 3
     },
     {
-      "catogary": "fhdhdffa",
-      "description": "fgf",
-      "id": 12
+      "catogary": "Nutan1",
+      "description": "4343443434",
+      "id": 5
     },
     {
       "catogary": "adfafd",
       "description": "fgfsadfdsafa",
       "id": 13
-    },
-    {
-      "catogary": "adfafd",
-      "description": "fgfsadfdsafa",
-      "id": 14
     },
     {
       "catogary": "archan",
@@ -52,8 +53,8 @@
       "id": 17
     },
     {
-      "catogary": "fadfa",
-      "description": "afa",
+      "catogary": "Sobiya",
+      "description": "121212",
       "id": 18
     },
     {
@@ -62,22 +63,7 @@
       "id": 19
     },
     {
-      "catogary": "I",
-      "description": "SD",
-      "id": 21
-    },
-    {
-      "catogary": "hllo saniya",
-      "description": "kfdaS",
-      "id": 22
-    },
-    {
-      "catogary": "Archana Sharma",
-      "description": "30000",
-      "id": 28
-    },
-    {
-      "catogary": "Dipanshu",
+      "catogary": "Dipanshu121",
       "description": "300",
       "id": 29
     },
@@ -87,12 +73,12 @@
       "id": 34
     },
     {
-      "catogary": "af",
+      "catogary": "Affree",
       "description": "sadfa",
       "id": 35
     },
     {
-      "catogary": "child",
+      "catogary": "child singh",
       "description": "fgs",
       "id": 36
     },
@@ -102,34 +88,59 @@
       "id": 37
     },
     {
-      "catogary": "dffdddfdfd",
-      "description": "dfdfdfdfdfdefdf",
-      "id": 38
-    },
-    {
-      "catogary": "Repair",
-      "description": "Office Repair expense",
-      "id": 39
-    },
-    {
-      "catogary": "dvd",
-      "description": "sv",
+      "catogary": "vinod",
+      "description": "bhola",
       "id": 40
     },
     {
-      "catogary": "fggggfg",
-      "description": "sdg",
-      "id": 41
+      "catogary": "Monika Singhg",
+      "description": "sdfsdf",
+      "id": 46
     },
     {
-      "catogary": "Monika",
-      "description": "23123",
-      "id": 42
+      "catogary": "meryy",
+      "description": "2323232",
+      "id": 52
     },
     {
-      "catogary": "faa",
-      "description": "sdfds",
-      "id": 43
+      "catogary": "monika",
+      "description": "32332323",
+      "id": 55
+    },
+    {
+      "catogary": "Sonali sinha",
+      "description": "2000",
+      "id": 57
+    },
+    {
+      "catogary": "Archan sharma",
+      "description": "2323232",
+      "id": 58
+    },
+    {
+      "catogary": "vikash kumar",
+      "description": "3000",
+      "id": 59
+    },
+    {
+      "catogary": "Amit singh",
+      "description": "dsf",
+      "id": 63
+    },
+    {
+      "catogary": "moghaksn",
+      "description": "45365",
+      "id": 64
+    },
+    {
+      "catogary": "tina",
+      "description": "mina",
+      "id": 66
+    },
+    {
+      "catogary": "mohan",
+      "description": "sohan\n",
+      "id": 68
     }
   ],
   "products": [

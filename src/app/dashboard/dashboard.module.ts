@@ -8,6 +8,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CatogaryListComponent } from './catogary-list/catogary-list.component';
 import { AddEditCatogaryComponent } from './add-edit-catogary/add-edit-catogary.component';
+import { ExpenseListComponent } from './expense-list/expense-list.component';
+import { AddEditExpenseComponent } from './add-edit-expense/add-edit-expense.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AddEditCatogaryComponent } from './add-edit-catogary/add-edit-catogary.
     NavComponent,
     SidebarComponent,
     CatogaryListComponent,
-    AddEditCatogaryComponent
+    AddEditCatogaryComponent,
+    ExpenseListComponent,
+    AddEditExpenseComponent
   ],
   imports: [
     CommonModule,

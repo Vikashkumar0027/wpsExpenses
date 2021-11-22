@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class LoginApiService {
   url = 'http://localhost:3000/posts';
   categoryList = 'http://localhost:3000/catogary';
-  ur3 = 'http://localhost:3000/products';
+  // ur3 = 'http://localhost:3000/products';
 
   constructor(private http: HttpClient) {}
   user(): Observable<any> {

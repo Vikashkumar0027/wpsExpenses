@@ -1,14 +1,24 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import {
+  ModalDismissReasons,
+  NgbActiveModal,
+  NgbModal,
+  NgbModalConfig,
+} from '@ng-bootstrap/ng-bootstrap';
 import { LoginApiService } from 'src/app/services/login-api.service';
 
 @Component({
   selector: 'app-add-edit-catogary',
   templateUrl: './add-edit-catogary.component.html',
   styleUrls: ['./add-edit-catogary.component.css'],
+  providers: [NgbModalConfig, NgbModal],
 })
 export class AddEditCatogaryComponent implements OnInit {
+  // category:any;//get Catogary type from category list
+  categoryType: any; //get Catogary type from category list
+    
   @Input() modalObject: any;
   @Output() closeAddEditModal = new EventEmitter();
   //  hide:boolean=true;
@@ -16,8 +26,15 @@ export class AddEditCatogaryComponent implements OnInit {
   constructor(
     private getService: LoginApiService,
     private router: Router,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    config: NgbModalConfig,
+    private modalService: NgbModal,
+    private activeModal: NgbActiveModal
   ) {
+    // customize default values of modals used by this component tree
+    // config.backdrop = 'static';
+    // config.keyboard = false;
+
     this.reactiveForm = this.fb.group({
       catogary: new FormControl(''),
       description: new FormControl(''),
@@ -26,48 +43,47 @@ export class AddEditCatogaryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('Add Edit Component');
-    if (this.modalObject.modalHeader === 'Edit') {
-      const id = Number(this.modalObject.id);
-      this.getService
-        .categoryItem(id)
-        .subscribe((res) => {
-          this.reactiveForm.patchValue(res)
-        });
+    console.log('Category' + this.categoryType);
+
+    if (this.categoryType.categoryNam === 'Edit') {
+      const id1 = Number(this.categoryType.ctgryId);
+      this.getService.categoryItem(id1).subscribe((res) => {
+        this.reactiveForm.patchValue(res);
+      });
     }
   }
+
+  modalClose() {
+    this.activeModal.close('Cancel');
+  }
   onSubmit() {
-    // alert(this.modalObject);
     const data = {
       catogary: this.reactiveForm.value.catogary,
       description: this.reactiveForm.value.description,
     };
-    if (this.modalObject.modalHeader === 'Add') {
+    if (this.categoryType.categoryNam === 'Add') {
       this.getService.create(data).subscribe(
-        (res) => {
-          this.router.navigate(['expense']);
+        () => {
+          // this.closeModal();
         },
         (err) => {
           console.log(err);
         }
       );
-    } 
-       else {
-      this.getService
-      .update(this.modalObject.id,this.reactiveForm.getRawValue())
-      .subscribe( ()=>{
-        // alert("Suceess")
-        
-
-        this.router.navigate(['/app/expense'])
-      })
+    } else {
+      const id1 = Number(this.categoryType.ctgryId);
+      this.getService.update(id1, this.reactiveForm.getRawValue()).subscribe(() => {
+          alert('Suceess');
+        });
     }
-    // console.log(this.reactiveForm.value);
 
     this.reactiveForm.reset();
-    // $('#exampleModalCenter').modal('hide');
+    this.modalClose(); //its use for close modal after save
+    // alert("DAta of Input"+data.catogary);
   }
-  closeModal() { //its for ouput decorator 
-    this.closeAddEditModal.emit('close')
+
+  closeModal() {
+    //its for ouput decorator
+    this.closeAddEditModal.emit('close');
   }
 }

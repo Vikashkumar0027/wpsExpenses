@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginApiService } from 'src/app/services/login-api.service';
-import * as $ from 'jquery';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-login',
@@ -15,8 +15,9 @@ export class LoginComponent implements OnInit {
   submitted: boolean = false;
   myId: any;
   userData: any;
+  closeModal: any;
 
-  constructor(private fb: FormBuilder, private userDatas: LoginApiService, private router: Router) {
+  constructor(private fb: FormBuilder, private userDatas: LoginApiService, private router: Router, private modalService: NgbModal) {
     this.reactiveForm = this.fb.group({
       email: new FormControl('', [Validators.required]),
       password: new FormControl('', [Validators.required, Validators.minLength(6)])
@@ -26,6 +27,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     // alert($(window).width());
   }
+
+ 
   get f() {
     return this.reactiveForm.controls
   }
@@ -59,7 +62,7 @@ export class LoginComponent implements OnInit {
         alert("please enter the right username and passWord");
       }
       else{
-        alert("sucess")
+        // alert("sucess")
         this.router.navigate(['app']);
       
       }
