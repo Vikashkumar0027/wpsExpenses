@@ -2,21 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginApiService } from 'src/app/services/login-api.service';
-import * as $ from 'jquery';
-import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
-
 })
 export class LoginComponent implements OnInit {
+
   reactiveForm: FormGroup;
   submitted: boolean = false;
   myId: any;
   userData: any;
-  closeModal: string;
+  closeModal: any;
 
   constructor(private fb: FormBuilder, private userDatas: LoginApiService, private router: Router, private modalService: NgbModal) {
     this.reactiveForm = this.fb.group({
@@ -29,20 +28,7 @@ export class LoginComponent implements OnInit {
     // alert($(window).width());
   }
 
-  triggerModal(content:any) {
-    this.modalService.open(content);
-  }
-  
-  getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return  `with: ${reason}`;
-    }
-  }
-
+ 
   get f() {
     return this.reactiveForm.controls
   }
@@ -72,14 +58,14 @@ export class LoginComponent implements OnInit {
         this.userData = this.myId[this.myId.findIndex((u: { email: any; password: any; }) => u.email === email && u.password === password)];
         // console.log("find Index="+this.userData);
 
-        if (!this.userData) {
-          alert("please enter the right username and passWord");
-        }
-        else {
-          // alert("sucess")
-          this.router.navigate(['dashbord']);
-
-        }
+      if(!this.userData){
+        alert("please enter the right username and passWord");
+      }
+      else{
+        // alert("sucess")
+        this.router.navigate(['app']);
+      
+      }
 
       })
 
@@ -93,3 +79,4 @@ export class LoginComponent implements OnInit {
   }
 
 }
+

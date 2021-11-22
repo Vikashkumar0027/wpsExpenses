@@ -1,0 +1,81 @@
+<!-- <a class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter" (click)="openAddEditModal('Add', '' )">Add Product </a> -->
+<!-- Modal use inside side bar in Add Catogary button  [routerLink]="['expense']" -->
+<!-- <button class="btn btn-danger" (click)="openAddEditModal(modalData, 'Add', '' )">Add pro</button> -->
+
+<!-- <ng-template #modalData let-modal> -->
+<!-- <app-add-edit-catogary [modalObject]="modalObjectParent" (closeAddEditModal)="closeAddEditModal($event)"></app-add-edit-catogary> -->
+<!-- </ng-template> -->
+<!-- <app-add-edit-catogary [modalObject]=modalObjectParent ></app-add-edit-catogary> -->
+
+
+<button (click)="openModal('Add','')">Add Catogary</button>
+    
+
+
+
+
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#id</th>
+            <th scope="col">Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let allproduct of List">
+            <td>{{allproduct.id}}</td>
+            <td>{{allproduct.catogary}}</td>
+            <td>{{allproduct.description}} </td>
+            <td>
+                <!-- <a [routerLink]="['',allproduct.id,'edit']" class="btn"> Edit </a> -->
+                <!-- <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" (click)="openAddEditModal('', 'edit',allproduct.id)">Edit </a> -->
+                <!-- <a class="btn btn-primary" [routerLink]="[]"  (click)="edit(allproduct.id)">
+                            
+                </a> -->
+
+                <!-- <button class="btn btn-lg btn-outline-primary"
+                 (click)="open(content, allproduct.id)"  (closeAddEditModal)="closeAddEditModal($event)">  
+                     Edit </button> -->
+                     <button (click)="openModal('Edit',allproduct.id)">Edit</button>
+               
+                
+                <button class="btn btn-danger"(click)="categoryDel(allproduct.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<!-- Edit form -->
+<!-- <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Edit Catogary</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+    
+      <form [formGroup]="reactiveForm" (ngSubmit)="EditSubmit()">           
+       
+        <div class="form-group">
+      <label> Name Of Catogary </label><br>
+      <input type="text" placeholder="name" formControlName="catogary"><br>
+      </div>
+      <div class="form-group">
+      <label> Catogary Description </label><br>
+      <textarea class="form-control" placeholder="description" formControlName="description"></textarea><br>
+    </div>
+   
+     <div class="modal-footer"> 
+    <button type="submit" class="btn btn-primary" (click)="c('Save click')">Save</button> 
+    </div>
+  
+  </form>
+    </div>
+  </ng-template> -->

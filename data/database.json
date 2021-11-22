@@ -1,6 +1,203 @@
 {
-    "posts": [
-      { "email":"vk112004@gmail.com","password":"123456"}
-    ]
-   
-  }
+  "posts": [
+    {
+      "email": "vk112004@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "expense": [
+    {
+      "NameExp": "mohankiyta  mohan",
+      "category": "adfafd",
+      "PaymentDate": "2021-11-21",
+      "Total_Amount": 32,
+      "id": 4
+    },
+    {
+      "NameExp": "White  daru",
+      "category": "Arrif",
+      "PaymentDate": "2021-11-28",
+      "Total_Amount": 121212,
+      "id": 5
+    }
+  ],
+  "catogary": [
+    {
+      "catogary": "Party of the End",
+      "description": "100000000000",
+      "id": 3
+    },
+    {
+      "catogary": "Nutan1",
+      "description": "4343443434",
+      "id": 5
+    },
+    {
+      "catogary": "adfafd",
+      "description": "fgfsadfdsafa",
+      "id": 13
+    },
+    {
+      "catogary": "archan",
+      "description": "fgfsadfdsafa",
+      "id": 15
+    },
+    {
+      "catogary": "sdg",
+      "description": "fgfsf",
+      "id": 16
+    },
+    {
+      "catogary": "saf",
+      "description": "afa",
+      "id": 17
+    },
+    {
+      "catogary": "Sobiya",
+      "description": "121212",
+      "id": 18
+    },
+    {
+      "catogary": "Arrif",
+      "description": "20000",
+      "id": 19
+    },
+    {
+      "catogary": "Dipanshu121",
+      "description": "300",
+      "id": 29
+    },
+    {
+      "catogary": "hallo",
+      "description": "qwdw",
+      "id": 34
+    },
+    {
+      "catogary": "Affree",
+      "description": "sadfa",
+      "id": 35
+    },
+    {
+      "catogary": "child singh",
+      "description": "fgs",
+      "id": 36
+    },
+    {
+      "catogary": "sds",
+      "description": "sadsad",
+      "id": 37
+    },
+    {
+      "catogary": "vinod",
+      "description": "bhola",
+      "id": 40
+    },
+    {
+      "catogary": "Monika Singhg",
+      "description": "sdfsdf",
+      "id": 46
+    },
+    {
+      "catogary": "meryy",
+      "description": "2323232",
+      "id": 52
+    },
+    {
+      "catogary": "monika",
+      "description": "32332323",
+      "id": 55
+    },
+    {
+      "catogary": "Sonali sinha",
+      "description": "2000",
+      "id": 57
+    },
+    {
+      "catogary": "Archan sharma",
+      "description": "2323232",
+      "id": 58
+    },
+    {
+      "catogary": "vikash kumar",
+      "description": "3000",
+      "id": 59
+    },
+    {
+      "catogary": "Amit singh",
+      "description": "dsf",
+      "id": 63
+    },
+    {
+      "catogary": "moghaksn",
+      "description": "45365",
+      "id": 64
+    },
+    {
+      "catogary": "tina",
+      "description": "mina",
+      "id": 66
+    },
+    {
+      "catogary": "mohan",
+      "description": "sohan\n",
+      "id": 68
+    }
+  ],
+  "products": [
+    {
+      "title": "Apple 16",
+      "image": "https://image.shutterstock.com/image-photo/chiang-mai-thailand-dec-202015-600w-355783916.jpg",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "title": "moto",
+      "image": "https://image.shutterstock.com/image-vector/mobile-ui-ux-korbon-gold-600w-1921530566.jpg"
+    },
+    {
+      "title": "moto archana",
+      "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note-8-sm-n950-4.jpg",
+      "id": 6
+    },
+    {
+      "title": "Mobile 1",
+      "image": "https://qph.fs.quoracdn.net/main-qimg-700d9f8e1268a4483f9be9826b1dec43",
+      "id": 7
+    },
+    {
+      "title": "जीवन में सफल होने वाला व्यक्ति ज्यादा सोचता नहीं",
+      "image": "https://image.shutterstock.com/image-photo/chiang-mai-thailand-dec-202015-600w-355783916.jpg",
+      "id": 9
+    },
+    {
+      "title": "hallo",
+      "image": "vikash",
+      "id": 10
+    },
+    {
+      "title": "hjhsdhh",
+      "image": "",
+      "id": 11
+    },
+    {
+      "title": "saasfsaA",
+      "image": "https://image.shutterstock.com/image-photo/chiang-mai-thailand-dec-202015-600w-355783916.jpg",
+      "id": 12
+    },
+    {
+      "title": "PURAN",
+      "image": "PURAN",
+      "id": 13
+    },
+    {
+      "title": "sdfs",
+      "image": "sdfsdf",
+      "id": 14
+    },
+    {
+      "title": "Archana",
+      "image": "sdfhhg",
+      "id": 15
+    }
+  ]
+}

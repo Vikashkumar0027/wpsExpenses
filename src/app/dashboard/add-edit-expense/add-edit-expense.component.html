@@ -1,0 +1,41 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{categoryType.type}} Expense</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modalClose()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">           
+       
+      <div class="form-group">
+    <label> Name Of Expense </label><br>
+    <input type="text" placeholder="name" formControlName="NameExp"><br>
+    </div>
+
+    <div class="form-group">
+        <label> Category </label><br>
+        <!-- <input type="text" placeholder="name" formControlName="catogary"><br> -->
+        <select name="demo" id="#" formControlName="category" >
+            <option selected="selected" value=""  >-- Please Select --</option>
+            <option *ngFor="let category of categoryList" >{{category.catogary}}</option>
+          
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label> Date of Payment </label><br>
+            <input type="date"  formControlName="PaymentDate"><br>
+            </div>
+
+    <div class="form-group">
+    <label> Total Amount </label><br>
+    <input type="number" placeholder="Total amount" formControlName="Total_Amount"><br>
+  </div>
+  
+   <div class="modal-footer"> 
+    <button type="submit" class="btn btn-outline-dark">Save</button>
+  
+  </div>
+  
+  </form>
+  </div>
