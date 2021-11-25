@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ExpenseService } from 'src/app/services/expense.service';
 import { AlertComponent } from 'src/app/shared/alert/alert.component';
+import { ViewComponent } from 'src/app/shared/view/view.component';
 import { AddEditExpenseComponent } from '../add-edit-expense/add-edit-expense.component';
 
 @Component({
@@ -40,7 +41,7 @@ export class ExpenseListComponent implements OnInit {
 
   openModal(type:any,id:any) {
     const activeModal = this.modalService.open(AddEditExpenseComponent, {
-      size: 'lg',
+      size: '',
       backdrop: 'static',
       keyboard: false,
     });
@@ -88,17 +89,27 @@ export class ExpenseListComponent implements OnInit {
       },
       (reason) => {}
     );
-
-
-
-
-
-
-
-
-    // this.ExpService.delete(data).subscribe(res=>{
+  // this.ExpService.delete(data).subscribe(res=>{
     //   this.categoryList();
     // })
+  }
+
+  viewModal(id:any){
+    const activeModal = this.modalService.open(ViewComponent, {
+      size: '',
+      backdrop: 'static',
+      keyboard: false,
+    });
+    
+    //data transfer to child
+    const content =  this.List.find(c => c.id === id);
+    activeModal.componentInstance.viewContent = content;
+    activeModal.result.then(
+      (result) => {
+     
+      },
+      (reason) => {}
+    );
   }
 
 }

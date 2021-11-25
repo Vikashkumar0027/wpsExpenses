@@ -1,0 +1,43 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{categoryType.type}} Services</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modalClose()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <!-- Form start -->
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">           
+       
+      <div class="form-group">
+    <label> Name of Service </label><br>
+    <input type="text" placeholder="Enter Service Name" formControlName="serviceName">
+    
+    <div *ngIf="submitted && f.serviceName.errors">
+      <span style="color: red;" *ngIf="f.serviceName.errors.required ">Please Enter Name Of Service</span>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label> Price </label><br>
+    <input type="number" placeholder="Enter Price" formControlName="price">
+    
+    <div *ngIf="submitted && f.price.errors">
+      <span style="color: red;" *ngIf="f.price.errors.required ">Please Enter Price</span>
+    </div>
+  </div>
+
+   
+       
+
+    
+
+ 
+   <div class="modal-footer"> 
+    <button type="submit" class="btn btn-outline-dark">Save</button>
+  
+  </div>
+  
+  </form>
+  </div>
+

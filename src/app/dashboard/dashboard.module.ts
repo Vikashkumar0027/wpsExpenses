@@ -10,6 +10,9 @@ import { CatogaryListComponent } from './catogary-list/catogary-list.component';
 import { AddEditCatogaryComponent } from './add-edit-catogary/add-edit-catogary.component';
 import { ExpenseListComponent } from './expense-list/expense-list.component';
 import { AddEditExpenseComponent } from './add-edit-expense/add-edit-expense.component';
+import { ClientComponent } from './client/client.component';
+import { AddEditClientComponent } from './add-edit-client/add-edit-client.component';
+import { ViewClientComponent } from './client/view-client/view-client.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { AddEditExpenseComponent } from './add-edit-expense/add-edit-expense.com
     CatogaryListComponent,
     AddEditCatogaryComponent,
     ExpenseListComponent,
-    AddEditExpenseComponent
+    AddEditExpenseComponent,
+    ClientComponent,
+    AddEditClientComponent,
+    ViewClientComponent
   ],
   imports: [
     CommonModule,

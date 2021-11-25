@@ -5,12 +5,17 @@
     </button>
   </div>
   <div class="modal-body">
+    <!-- Form start -->
     <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">           
        
       <div class="form-group">
     <label> Name Of Expense </label><br>
-    <input type="text" placeholder="name" formControlName="NameExp"><br>
+    <input type="text" placeholder="name" formControlName="NameExp">
+    
+    <div *ngIf="submitted && f.NameExp.errors">
+      <span style="color: red;" *ngIf="f.NameExp.errors.required ">Please Enter Name Of Expense</span>
     </div>
+  </div>
 
     <div class="form-group">
         <label> Category </label><br>
@@ -18,19 +23,43 @@
         <select name="demo" id="#" formControlName="category" >
             <option selected="selected" value=""  >-- Please Select --</option>
             <option *ngFor="let category of categoryList" >{{category.catogary}}</option>
-          
             </select>
+        
+        <div *ngIf="submitted && f.category.errors">
+          <span style="color: red;" *ngIf="f.category.errors.required ">Please Select Catogary </span>
         </div>
+      </div>
 
         <div class="form-group">
             <label> Date of Payment </label><br>
             <input type="date"  formControlName="PaymentDate"><br>
+           
+
+            <div *ngIf="submitted && f.PaymentDate.errors">
+              <span style="color: red;" *ngIf="f.PaymentDate.errors.required ">Please Select Date </span>
             </div>
+          </div>
 
     <div class="form-group">
     <label> Total Amount </label><br>
     <input type="number" placeholder="Total amount" formControlName="Total_Amount"><br>
+  
+  <div *ngIf="submitted && f.Total_Amount.errors">
+    <span style="color: red;" *ngIf="f.Total_Amount.errors.required ">Please Enter Total Amount </span>
   </div>
+</div>
+
+  <div class="form-group">
+    <input type="radio" id="Active" name="fav_language" value="Active"  formControlName="status">
+      <label for="Active">Active</label>
+      <input type="radio" id="Inactive" name="fav_language" value="Inactive" formControlName="status">
+      <label for="Inactive">Inactive</label><br>
+  
+
+  <div *ngIf="submitted && f.status.errors">
+    <span style="color: red;" *ngIf="f.status.errors.required ">Please Select </span>
+  </div>
+</div>
   
    <div class="modal-footer"> 
     <button type="submit" class="btn btn-outline-dark">Save</button>

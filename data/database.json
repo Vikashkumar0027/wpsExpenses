@@ -5,12 +5,55 @@
       "password": "123456"
     }
   ],
+  "services": [
+    {
+      "serviceName": "PhotoEditing",
+      "price": 100,
+      "id": 1
+    },
+    {
+      "serviceName": "application",
+      "price": 1222,
+      "id": 2
+    },
+    {
+      "serviceName": "f",
+      "price": 2345,
+      "id": 3
+    },
+    {
+      "serviceName": "ag",
+      "price": 436345,
+      "id": 4
+    },
+    {
+      "serviceName": "bdbdfxb",
+      "price": 25325,
+      "id": 5
+    },
+    {
+      "serviceName": "wtga",
+      "price": 4365,
+      "id": 6
+    },
+    {
+      "serviceName": "afd",
+      "price": 3465,
+      "id": 7
+    },
+    {
+      "serviceName": "efdf",
+      "price": 43,
+      "id": 8
+    }
+  ],
   "expense": [
     {
       "NameExp": "mohankiyta  mohan",
       "category": "adfafd",
       "PaymentDate": "2021-11-21",
       "Total_Amount": 32,
+      "status": "Active",
       "id": 4
     },
     {
@@ -18,129 +61,312 @@
       "category": "Arrif",
       "PaymentDate": "2021-11-28",
       "Total_Amount": 121212,
+      "status": "Inactive",
       "id": 5
+    },
+    {
+      "NameExp": "Archan party",
+      "category": "vinod",
+      "PaymentDate": "2021-11-28",
+      "Total_Amount": 1212122,
+      "status": "Active",
+      "id": 6
+    },
+    {
+      "NameExp": "Mango n",
+      "category": "vinod",
+      "PaymentDate": "2021-11-21",
+      "Total_Amount": 1212,
+      "status": "Active",
+      "id": 7
+    },
+    {
+      "NameExp": "DASF",
+      "category": "Nutan1",
+      "PaymentDate": "2021-11-26",
+      "Total_Amount": 123,
+      "status": "Active",
+      "id": 8
     }
   ],
   "catogary": [
     {
       "catogary": "Party of the End",
       "description": "100000000000",
+      "status": "Inactive",
       "id": 3
     },
     {
       "catogary": "Nutan1",
       "description": "4343443434",
+      "status": "Active",
       "id": 5
     },
     {
       "catogary": "adfafd",
       "description": "fgfsadfdsafa",
+      "status": "Inactive",
       "id": 13
     },
     {
       "catogary": "archan",
       "description": "fgfsadfdsafa",
+      "status": "Inactive",
       "id": 15
     },
     {
       "catogary": "sdg",
       "description": "fgfsf",
+      "status": "Inactive",
       "id": 16
     },
     {
       "catogary": "saf",
       "description": "afa",
+      "status": "Inactive",
       "id": 17
     },
     {
       "catogary": "Sobiya",
       "description": "121212",
+      "status": "Inactive",
       "id": 18
     },
     {
       "catogary": "Arrif",
       "description": "20000",
+      "status": "Inactive",
       "id": 19
     },
     {
       "catogary": "Dipanshu121",
       "description": "300",
+      "status": "Inactive",
       "id": 29
-    },
-    {
-      "catogary": "hallo",
-      "description": "qwdw",
-      "id": 34
-    },
-    {
-      "catogary": "Affree",
-      "description": "sadfa",
-      "id": 35
-    },
-    {
-      "catogary": "child singh",
-      "description": "fgs",
-      "id": 36
-    },
-    {
-      "catogary": "sds",
-      "description": "sadsad",
-      "id": 37
     },
     {
       "catogary": "vinod",
       "description": "bhola",
+      "status": "Active",
       "id": 40
     },
     {
       "catogary": "Monika Singhg",
       "description": "sdfsdf",
+      "status": "Inactive",
       "id": 46
     },
     {
       "catogary": "meryy",
       "description": "2323232",
+      "status": "Inactive",
       "id": 52
     },
     {
       "catogary": "monika",
       "description": "32332323",
+      "status": "Inactive",
       "id": 55
     },
     {
       "catogary": "Sonali sinha",
       "description": "2000",
+      "status": "Inactive",
       "id": 57
     },
     {
       "catogary": "Archan sharma",
       "description": "2323232",
+      "status": "Inactive",
       "id": 58
     },
     {
       "catogary": "vikash kumar",
       "description": "3000",
+      "status": "Inactive",
       "id": 59
     },
     {
       "catogary": "Amit singh",
       "description": "dsf",
+      "status": "Inactive",
       "id": 63
     },
     {
       "catogary": "moghaksn",
       "description": "45365",
+      "status": "Inactive",
       "id": 64
     },
     {
       "catogary": "tina",
       "description": "mina",
+      "status": "Active",
       "id": 66
     },
     {
       "catogary": "mohan",
       "description": "sohan\n",
+      "status": "Inactive",
       "id": 68
+    },
+    {
+      "catogary": "Birthay ",
+      "description": "Arrif Wediing",
+      "status": "Active",
+      "id": 69
+    },
+    {
+      "catogary": "gd",
+      "description": "dzf",
+      "status": "Inactive",
+      "id": 70
+    },
+    {
+      "catogary": "Ariiftravell",
+      "description": "ajhbhafba",
+      "status": "Active",
+      "id": 71
+    },
+    {
+      "catogary": "Arif wife",
+      "description": "Mango",
+      "status": "Inactive",
+      "id": 72
+    },
+    {
+      "catogary": "Anuual party",
+      "description": "More",
+      "status": "Active",
+      "id": 74
+    },
+    {
+      "catogary": "FGSFG",
+      "description": "DDSFGSFDG",
+      "status": "Inactive",
+      "id": 75
+    }
+  ],
+  "client": [
+    {
+      "Name": "vikash kumar singhania",
+      "jobName": "Developer",
+      "companyName": "TCH",
+      "email": "vk112004@gmail.vcom",
+      "adress": "",
+      "phone": "",
+      "profile": "",
+      "companyType": "WPS",
+      "status": "Active",
+      "whatsApp": "",
+      "paypal": "",
+      "skypeId": "",
+      "id": 1
+    },
+    {
+      "Name": "Mohani",
+      "jobName": "site engineer",
+      "companyName": "Infosys",
+      "email": "vk@gmail.com",
+      "adress": "delhi",
+      "phone": 7992294226,
+      "profile": "hrop",
+      "companyType": "WPS",
+      "status": "Inactive",
+      "whatsApp": 12,
+      "paypal": "12",
+      "skypeId": "12",
+      "id": 2
+    },
+    {
+      "Name": "Soniyaa malhotra",
+      "jobName": "df",
+      "companyName": "sad",
+      "email": "ABHIPKL1212@GMAIL.COM",
+      "adress": "ddd",
+      "phone": 7004782843,
+      "profile": "sa",
+      "companyType": "WPS",
+      "status": "Active",
+      "whatsApp": 143,
+      "paypal": "fdr",
+      "skypeId": "cd",
+      "id": 3
+    },
+    {
+      "Name": "Archana sharma1",
+      "jobName": "Sing",
+      "companyName": "dsa",
+      "email": "Ar@gmail.com",
+      "adress": "ewf",
+      "phone": 7992294226,
+      "profile": "fasd",
+      "companyType": "WPS",
+      "status": "Active",
+      "whatsApp": 43,
+      "paypal": "fdg",
+      "skypeId": "dfd",
+      "id": 5
+    },
+    {
+      "Name": "Archanaa",
+      "jobName": "AFCA",
+      "companyName": "AFD",
+      "email": "ABHIPKL1212@GMAIL.COM",
+      "adress": "EWRF",
+      "phone": 7004782843,
+      "profile": "EWF",
+      "companyType": "WPS",
+      "status": "Active",
+      "whatsApp": 3214324,
+      "paypal": "3141",
+      "skypeId": "41324",
+      "id": 7
+    },
+    {
+      "Name": "Sinua",
+      "jobName": "D",
+      "companyName": "SDF",
+      "email": "ABHIPKL1212@GMAIL.COM",
+      "adress": "SDFG",
+      "phone": 7004782843,
+      "profile": "",
+      "companyType": "WPS",
+      "status": "Active",
+      "whatsApp": "",
+      "paypal": "",
+      "skypeId": "",
+      "id": 8
+    },
+    {
+      "Name": "sONALIUYA",
+      "jobName": "GRR",
+      "companyName": "GSG",
+      "email": "GG@GMAIL.COM",
+      "adress": "EWRFE",
+      "phone": 7992294226,
+      "profile": "EWAF",
+      "companyType": "WPS",
+      "status": "Inactive",
+      "whatsApp": 542365,
+      "paypal": "SDHFG",
+      "skypeId": "SDFVG",
+      "id": 9
+    },
+    {
+      "Name": "Monika",
+      "jobName": "Hcl",
+      "companyName": "sds",
+      "email": "ABHIPKL1212@GMAIL.COM",
+      "adress": "",
+      "phone": 7004782843,
+      "profile": "",
+      "companyType": "GPE",
+      "status": "Inactive",
+      "whatsApp": "",
+      "paypal": "",
+      "skypeId": "",
+      "id": 11
     }
   ],
   "products": [

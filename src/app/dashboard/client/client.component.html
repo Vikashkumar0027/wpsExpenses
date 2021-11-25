@@ -1,0 +1,29 @@
+<button (click)="openModal('Add','')" class="btn btn-success">Add Client</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of list">
+            <td>{{data.id}}</td>
+            <td>{{data.Name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.status}}</td>
+            <td>
+                <button (click)="openModal('Edit',data.id)"> Edit </button>
+                <!-- <a href="#" [routerLink]="['/view'] " class="btn btn-primary">View</a> -->
+                <!-- <a  routerLink="view" class="btn btn-primary">View</a> -->
+                <button (click)="viewModal(data.id)" >View</button>
+                <button class="btn btn-danger" (click)="categoryDel(data.id)">&times;</button>
+
+            </td>
+        </tr>
+    </tbody>
+
+</table>

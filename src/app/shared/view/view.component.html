@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title"> View Details</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modalClose()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+     <p *ngIf="viewContent.NameExp"><b>Name of Expense= </b>{{viewContent.NameExp}}</p>
+     <p><b>Name of Category= </b>{{viewContent.category}}</p>
+     <p><b>Date= </b>{{viewContent.PaymentDate}}</p>
+     <p><b>Status= </b>{{viewContent.status}}</p>
+     <p><b>Total Amount= </b>{{viewContent.Total_Amount}}</p>
+     
+  </div>
+  <div class="modal-footer"> 
+    <button type="submit" class="btn btn-outline-dark"  (click)="cancel()">Close</button>
+    </div>
+
