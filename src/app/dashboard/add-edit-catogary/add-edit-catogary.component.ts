@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import {
   ModalDismissReasons,
@@ -18,6 +18,7 @@ import { LoginApiService } from 'src/app/services/login-api.service';
 export class AddEditCatogaryComponent implements OnInit {
   // category:any;//get Catogary type from category list
   categoryType: any; //get Catogary type from category list
+  submitted: boolean = false;
     
   @Input() modalObject: any;
   @Output() closeAddEditModal = new EventEmitter();
@@ -36,8 +37,9 @@ export class AddEditCatogaryComponent implements OnInit {
     // config.keyboard = false;
 
     this.reactiveForm = this.fb.group({
-      catogary: new FormControl(''),
+      catogary: new FormControl('', [Validators.required,]),
       description: new FormControl(''),
+      status:new FormControl('', [Validators.required]),
     });
     //
   }
@@ -52,16 +54,26 @@ export class AddEditCatogaryComponent implements OnInit {
       });
     }
   }
+  get f() {
+    return this.reactiveForm.controls
+  }
 
   modalClose() {
     this.activeModal.close('Cancel');
   }
   onSubmit() {
+    this.submitted = true;
+
+    if (this.reactiveForm.invalid) {
+      return;
+    }
     const data = {
       catogary: this.reactiveForm.value.catogary,
       description: this.reactiveForm.value.description,
+      status:this.reactiveForm.value.status,
     };
     if (this.categoryType.categoryNam === 'Add') {
+      console.log(this.reactiveForm.value);
       this.getService.create(data).subscribe(
         () => {
           // this.closeModal();

@@ -6,9 +6,11 @@
                 <label>Email Id</label>
                 <input type="text" name="email" placeholder="youremail@yahoo.com" formControlName="email"> 
                 <br>
+
                 <div *ngIf="submitted && f.email.errors">
                     <span style="color: red;" *ngIf="f.email.errors.required ">Please enter Email</span>
                 </div>
+                
                 <br>
                 <label>PASSWORD</label>
                 <input type="password" name="password" placeholder="******" formControlName="password"> 

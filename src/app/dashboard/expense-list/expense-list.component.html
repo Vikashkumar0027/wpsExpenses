@@ -2,30 +2,35 @@
 
 
 <table class="table table-bordered">
-    <thead>
-        <tr>
-            <th scope="col">#id</th>
-            <th scope="col">Name of Expense</th>
-            <th scope="col"> Category</th>
-            <th scope="col">Date of Payment</th>
-            <th scope="col">Total Amount</th>
-            <th scope="col">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let allproduct of List">
-            <td>{{allproduct.id}}</td>
-            <td>{{allproduct.NameExp}}</td>
-            <td>{{allproduct.category}} </td>
-            <td>{{allproduct.PaymentDate}} </td>
-            <td>{{allproduct.Total_Amount}} </td>
-            <td>
-               
-                     <button (click)="openModal('Edit',allproduct.id)">Edit</button>
-               
-                
-                <button class="btn btn-danger"(click)="categoryDel(allproduct.id)">Delete</button>
-            </td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th scope="col">#id</th>
+      <th scope="col">Name of Expense</th>
+      <th scope="col"> Category</th>
+      <th scope="col">Date of Payment</th>
+      <th scope="col">Status</th>
+      <th scope="col">Total Amount</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let allproduct of List">
+      <td>{{allproduct.id}}</td>
+      <td>{{allproduct.NameExp}}</td>
+      <td>{{allproduct.category}} </td>
+
+      <td>{{allproduct.PaymentDate}} </td>
+      <td>{{allproduct.status}} </td>
+      <td>{{allproduct.Total_Amount}} </td>
+      <td>
+
+        <button (click)="openModal('Edit',allproduct.id)"> Edit </button>
+        <button (click)="viewModal(allproduct.id)" >View</button>
+
+        <!-- <button class="btn btn-danger"(click)="categoryDel(allproduct.id)">Delete</button> -->
+        <button class="btn btn-danger" (click)="categoryDel(allproduct.id)">&times;</button>
+
+      </td>
+    </tr>
+  </tbody>
 </table>

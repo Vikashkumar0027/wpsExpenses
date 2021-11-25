@@ -116,9 +116,23 @@
   <label> Name Of Catogary </label><br>
   <input type="text" placeholder="name" formControlName="catogary"><br>
   </div>
+  <!-- validators message -->
+  <div *ngIf="submitted && f.catogary.errors">
+    <span style="color: red;" *ngIf="f.catogary.errors.required ">Please enter Catogary</span>
+</div>
   <div class="form-group">
   <label> Catogary Description </label><br>
   <textarea class="form-control" placeholder="description" formControlName="description"></textarea><br>
+</div>
+<div class="form-group">
+  <input type="radio" id="Active" name="fav_language" value="Active"  formControlName="status">
+    <label for="Active">Active</label>
+    <input type="radio" id="Inactive" name="fav_language" value="Inactive" formControlName="status">
+    <label for="Inactive">Inactive</label><br>
+</div>
+ <!-- validators apply message -->
+<div *ngIf="submitted && f.status.errors">
+  <span style="color: red;" *ngIf="f.status.errors.required ">Please Select </span>
 </div>
 
  <div class="modal-footer"> 
