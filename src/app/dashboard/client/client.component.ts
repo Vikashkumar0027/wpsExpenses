@@ -80,9 +80,9 @@ export class ClientComponent implements OnInit {
     );
   }
 
-  viewModal(ID:any){
+  viewModal(id:any){
 // this.router.navigate(['view'], {relativeTo:this.route});
-this.router.navigate(['app/client/view']);
+this.router.navigate(['app/client/view',id]);
 
   }
   

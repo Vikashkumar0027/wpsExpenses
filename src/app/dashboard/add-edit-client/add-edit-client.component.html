@@ -1,85 +1,87 @@
 <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">{{categoryType.type}} Client</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modalClose()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">           
-       
+  <h4 class="modal-title" id="modal-basic-title">{{categoryType.type}} Client</h4>
+  <button type="button" class="close" aria-label="Close" (click)="modalClose()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+
   <div class="modal-body">
-        <div class="form-group row">
+    <div class="form-group row">
       <label class="col-sm-4 col-form-label"> Name<sup style="color:red"><b>*</b></sup>: </label>
       <div class="col-sm-8">
-      <input class="form-control" type="text" placeholder="name" formControlName="Name">
-    <!-- validation massage -->
-      <div *ngIf="submitted && f.Name.errors">
-        <span style="color: red;" *ngIf="f.Name.errors.required ">Please Enter Name</span>
+        <input class="form-control" type="text" placeholder="Please Enter the Name" formControlName="name">
+        <!-- validation massage -->
+        <div *ngIf="submitted && f.name.errors">
+          <span style="color: red;" *ngIf="f.name.errors.required ">Please Enter Name</span>
+        </div>
       </div>
     </div>
-    </div>
-  
-      <div class="form-group row">
-          <label class="col-sm-4 col-form-label"> Name Of Job<sup style="color:red"><b>*</b></sup>: </label>
-          <div class="col-sm-8">
-          <input class="form-control" type="text" placeholder="jobName" formControlName="jobName">
-          
-          <div *ngIf="submitted && f.jobName.errors">
-            <span style="color: red;" *ngIf="f.jobName.errors.required ">Please Enter Name of Job </span>
-          </div>
-        </div>
-        </div>
 
-        <div class="form-group row">
-            <label class="col-sm-4 col-form-label"> Name Of Company: </label>
-            <div class="col-sm-8">
-            <input class="form-control" type="text" name="companyName" formControlName="companyName">
-            
-          </div>
-          </div>
-  
-          <div class="form-group row">
-              <label class="col-sm-4 col-form-label"> Email<sup style="color:red"><b>*</b></sup>: </label>
-              <div class="col-sm-8">
-              <input class="form-control" type="email"  formControlName="email"><br>
-             
-  
-              <div *ngIf="submitted && f.email.errors">
-                <span style="color: red;" *ngIf="f.email.errors.required ">Please Enter Email </span>
-              </div>
-              </div>
-            </div>
-  
-      <div class="form-group row">
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label"> Name Of Job<sup style="color:red"><b>*</b></sup>: </label>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" placeholder="Enter job Name" formControlName="jobName">
+
+        <div *ngIf="submitted && f.jobName.errors">
+          <span style="color: red;" *ngIf="f.jobName.errors.required ">Please Enter Name of Job </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label"> Name Of Company: </label>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" placeholder="Enter Company Name" name="companyName"
+          formControlName="companyName">
+
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label"> Email<sup style="color:red"><b>*</b></sup>: </label>
+      <div class="col-sm-8">
+        <input class="form-control" type="email" placeholder="Please Enter Email" formControlName="email"><br>
+
+
+        <div *ngIf="submitted && f.email.errors">
+          <span style="color: red;" *ngIf="f.email.errors.required ">Please Enter Email </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
       <label class="col-sm-4 col-form-label"> Adress: </label>
       <div class="col-sm-8">
-      <input class="form-control" type="text" placeholder="adress" formControlName="adress"><br>
-    
-    <div *ngIf="submitted && f.adress.errors">
-      <span style="color: red;" *ngIf="f.adress.errors.required ">Please Enter Adress </span>
-    </div>
-    </div>
-  </div>
+        <input class="form-control" type="text" placeholder="Please Enter Adress" formControlName="adress"><br>
 
-  <div class="form-group row">
+        <div *ngIf="submitted && f.adress.errors">
+          <span style="color: red;" *ngIf="f.adress.errors.required ">Please Enter Adress </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
       <label class="col-sm-4 col-form-label">Phone:</label>
       <div class="col-sm-8">
-      <input class="form-control" type="number" placeholder="phone" formControlName="phone">
-      <div *ngIf="submitted && f.phone.errors">
-        <span style="color: red;" *ngIf="f.phone.errors.required ">Please Enter Phone </span>
+        <input class="form-control" type="number" placeholder="Please Enter Phone" formControlName="phone">
+        <div *ngIf="submitted && f.phone.errors">
+          <span style="color: red;" *ngIf="f.phone.errors.required ">Please Enter Phone </span>
+        </div>
       </div>
-      </div>
-  </div>
-  
-  <div class="form-group row">
+    </div>
+
+    <div class="form-group row">
       <label class="col-sm-4 col-form-label">Profile:</label>
       <div class="col-sm-8">
-    <input class="form-control" type="text" placeholder="profile" formControlName="profile">
-    <div *ngIf="submitted && f.profile.errors">
-        <span style="color: red;" *ngIf="f.profile.errors.required ">Please Enter Profile </span>
-      </div></div>
-  </div>
+        <input class="form-control" type="text" placeholder="Please Enter Profile" formControlName="profile">
+        <div *ngIf="submitted && f.profile.errors">
+          <span style="color: red;" *ngIf="f.profile.errors.required ">Please Enter Profile </span>
+        </div>
+      </div>
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label>Type Of Company:</label><br>
       <input type="radio" id="Wps" name="companyType" value="WPS" formControlName="companyType">
       <label for="Wps">WPS</label>
@@ -89,48 +91,48 @@
 
       <div *ngIf="submitted && f.companyType.errors">
         <span style="color: red;" *ngIf="f.companyType.errors.required ">Please Select Company </span>
-      
+
+      </div>
     </div>
-  </div>
 
     <div class="form-group">
-        <label >Status:</label><br>
-      <input type="radio" id="Active" name="status" value="Active"  formControlName="status">
+      <label>Status:</label><br>
+      <input type="radio" id="Active" name="status" value="Active" formControlName="status">
         <label for="Active">Active</label>
 
         <input type="radio" id="Inactive" name="status" value="Inactive" formControlName="status">
         <label for="Inactive">Inactive</label><br>
-    
-  
-    <div *ngIf="submitted && f.status.errors">
-      <span style="color: red;" *ngIf="f.status.errors.required ">Please Select </span>
+
+
+      <div *ngIf="submitted && f.status.errors">
+        <span style="color: red;" *ngIf="f.status.errors.required ">Please Select </span>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Whatsapp:</label>
+      <div class="col-sm-8">
+        <input class="form-control" type="number" placeholder="Please Enter Whatsapp Number" formControlName="whatsApp">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Paypal:</label>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" placeholder="Please Enter Paypal ID" formControlName="paypal">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Skype Id:</label>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" placeholder="Please Enter SkypeId" formControlName="skypeId">
+      </div>
     </div>
   </div>
 
-  <div class="form-group row">
-      <label class="col-sm-4 col-form-label">Whatsapp:</label>
-      <div class="col-sm-8">
-      <input class="form-control" type="number" formControlName="whatsApp">
-  </div></div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-outline-dark">Save</button>
 
-  <div class="form-group row">
-    <label class="col-sm-4 col-form-label">Paypal:</label>
-    <div class="col-sm-8">
-    <input class="form-control" type="text" formControlName="paypal">
-</div>
-</div>
-<div class="form-group row">
-    <label class="col-sm-4 col-form-label">Skype Id:</label>
-    <div class="col-sm-8">
-    <input class="form-control" type="text" formControlName="skypeId">
-</div>
-</div>
-</div>   
-    
-     <div class="modal-footer"> 
-      <button type="submit" class="btn btn-outline-dark">Save</button>
-    
-    </div>
-    
-    </form>
- 
+  </div>
+
+</form>

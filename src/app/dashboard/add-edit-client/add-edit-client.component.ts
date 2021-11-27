@@ -15,7 +15,7 @@ export class AddEditClientComponent implements OnInit {
 
   constructor(private activeModal:NgbActiveModal,private fb: FormBuilder , private clientS:ClientService) {
     this.reactiveForm=this.fb.group({
-     Name:new FormControl('',[Validators.required]),
+     name:new FormControl('',[Validators.required]),
      jobName:new FormControl('',[Validators.required]),
      companyName:new FormControl(''),
      email:new FormControl('',[Validators.required]),
