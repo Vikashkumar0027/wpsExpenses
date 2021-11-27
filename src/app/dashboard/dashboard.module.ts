@@ -13,6 +13,7 @@ import { AddEditExpenseComponent } from './add-edit-expense/add-edit-expense.com
 import { ClientComponent } from './client/client.component';
 import { AddEditClientComponent } from './add-edit-client/add-edit-client.component';
 import { ViewClientComponent } from './client/view-client/view-client.component';
+import { JobServiceComponent } from './client/job-service/job-service.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ViewClientComponent } from './client/view-client/view-client.component'
     AddEditExpenseComponent,
     ClientComponent,
     AddEditClientComponent,
-    ViewClientComponent
+    ViewClientComponent,
+    JobServiceComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,24 @@
+<h6><u> <b> Jobs Services</b> </u>
+
+  <div class="text-right">
+    <button (click)="openModal('Add','')" class="btn btn-success">Add Services</button>
+  </div>
+</h6>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#id</th>
+      <th scope="col">Name of Service</th>
+      <th scope="col">price</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let data of lists">
+      <!-- <h2 *ngIf=nodata>No Data Found</h2> -->
+      <td>{{data.id}}</td>
+      <td>{{data.serviceName}}</td>
+      <td>{{data.price}} $</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,24 +1,32 @@
-<h6><u> <b> List Of Services</b> </u>
 
-<div class="text-right">
-    <button  (click)="openModal('Add','')" class="btn btn-success">Add Services</button>
-</div>
-</h6>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th scope="col">#id</th>
-            <th scope="col">Name of Service</th>
-            <th scope="col">price</th>
-        </tr>
-    </thead>
+
+<table class="table table-bordered" *ngIf="clntdata">
     <tbody>
-        
-        <tr *ngFor="let data of list">
-            <h2 *ngIf=nodata>No Data Found</h2>
-            <td>{{data.id}}</td>
-            <td>{{data.serviceName}}</td>
-            <td>{{data.price}} $</td>
-            </tr>
-            </tbody>
-            </table>
+        <tr>
+            <td ><p><b>Name:</b> {{clntdata.name}}</p></td>
+            <td><p><b>Name Of Job:</b> {{ clntdata.jobName}}</p></td>
+        </tr>
+        <tr>
+            <td><p><b> Name Of Company:</b> {{clntdata.companyName}}</p></td>
+            <td><p><b> Email:</b> {{clntdata.email}}</p></td>
+        </tr>
+        <tr>
+            <td><p><b> Adress:</b> {{clntdata.adress}}</p></td>
+            <td><p><b>Phone :</b> {{clntdata.phone}}</p></td>
+        </tr>
+        <tr>
+            <td><p><b> Profile:</b> {{clntdata.profile}}</p></td>
+            <td><p><b> Type Of Company:</b> {{clntdata.companyType}}</p></td>
+        </tr>
+        <tr>
+            <td><p><b> Status:</b> {{clntdata.status}}</p></td>
+            <td><p><b> Whatsapp:</b> {{clntdata.whatsApp}}</p></td>
+        </tr>
+        <tr>
+            <td><p><b>Paypal:</b> {{clntdata.paypal}}</p></td>
+            <td><p><b>Skype Id:</b> {{clntdata.skypeId}}</p></td>
+        </tr>
+    </tbody>
+</table>
+<app-job-service></app-job-service>
+<!-- <button (click)="jobService()" >Jobs Services</button> -->

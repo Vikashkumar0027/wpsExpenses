@@ -9,42 +9,26 @@
     {
       "serviceName": "PhotoEditing",
       "price": 100,
-      "id": 1
+      "id": 1,
+      "clientId": 1
     },
     {
-      "serviceName": "application",
-      "price": 1222,
+      "serviceName": "Photo",
+      "price": 23,
+      "clientId": 1,
       "id": 2
     },
     {
-      "serviceName": "f",
-      "price": 2345,
+      "serviceName": "taj",
+      "price": 12,
+      "clientId": 7,
       "id": 3
     },
     {
-      "serviceName": "ag",
-      "price": 436345,
+      "serviceName": "Toy",
+      "price": 2222222222,
+      "clientId": 2,
       "id": 4
-    },
-    {
-      "serviceName": "bdbdfxb",
-      "price": 25325,
-      "id": 5
-    },
-    {
-      "serviceName": "wtga",
-      "price": 4365,
-      "id": 6
-    },
-    {
-      "serviceName": "afd",
-      "price": 3465,
-      "id": 7
-    },
-    {
-      "serviceName": "efdf",
-      "price": 43,
-      "id": 8
     }
   ],
   "expense": [
@@ -249,7 +233,7 @@
   ],
   "client": [
     {
-      "Name": "vikash kumar singhania",
+      "name": "vikash kumar singhania",
       "jobName": "Developer",
       "companyName": "TCH",
       "email": "vk112004@gmail.vcom",
@@ -264,7 +248,7 @@
       "id": 1
     },
     {
-      "Name": "Mohani",
+      "name": "Mohani",
       "jobName": "site engineer",
       "companyName": "Infosys",
       "email": "vk@gmail.com",
@@ -279,7 +263,7 @@
       "id": 2
     },
     {
-      "Name": "Soniyaa malhotra",
+      "name": "Soniyaa malhotra",
       "jobName": "df",
       "companyName": "sad",
       "email": "ABHIPKL1212@GMAIL.COM",
@@ -294,7 +278,7 @@
       "id": 3
     },
     {
-      "Name": "Archana sharma1",
+      "name": "Archana sharma1",
       "jobName": "Sing",
       "companyName": "dsa",
       "email": "Ar@gmail.com",
@@ -309,7 +293,7 @@
       "id": 5
     },
     {
-      "Name": "Archanaa",
+      "name": "Archanaa",
       "jobName": "AFCA",
       "companyName": "AFD",
       "email": "ABHIPKL1212@GMAIL.COM",
@@ -324,7 +308,7 @@
       "id": 7
     },
     {
-      "Name": "Sinua",
+      "name": "Sinua",
       "jobName": "D",
       "companyName": "SDF",
       "email": "ABHIPKL1212@GMAIL.COM",
@@ -339,7 +323,7 @@
       "id": 8
     },
     {
-      "Name": "sONALIUYA",
+      "name": "sONALIUYA",
       "jobName": "GRR",
       "companyName": "GSG",
       "email": "GG@GMAIL.COM",
@@ -354,7 +338,7 @@
       "id": 9
     },
     {
-      "Name": "Monika",
+      "name": "Monika",
       "jobName": "Hcl",
       "companyName": "sds",
       "email": "ABHIPKL1212@GMAIL.COM",
