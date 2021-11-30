@@ -8,6 +8,7 @@ import { JobServiceComponent } from './client/job-service/job-service.component'
 import { ViewClientComponent } from './client/view-client/view-client.component';
 import { DashboardComponent } from './dashboard.component';
 import { ExpenseListComponent } from './expense-list/expense-list.component';
+import { JobComponent } from './job-s/job/job.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,8 @@ const routes: Routes = [
       {path:'client', component:ClientComponent},
       {path:'client/view/:id',component:ViewClientComponent},
       {path:'client/view/:id/jobs',component:JobServiceComponent},
+
+      {path:'job', component:JobComponent},
     ],
   },
   // {path:'expense',component:CatogaryListComponent}

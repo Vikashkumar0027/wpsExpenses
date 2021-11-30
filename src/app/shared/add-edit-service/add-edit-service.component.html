@@ -29,6 +29,19 @@
       <input type="text" value='{{clntid}}' formControlName="clientId">
     </div> -->
   </div>
+  <div class="form-group">
+    <label>Status:</label><br>
+    <input type="radio" id="Active" name="status" value="Active" formControlName="status">
+      <label for="Active">Active</label>
+
+      <input type="radio" id="Inactive" name="status" value="Inactive" formControlName="status">
+      <label for="Inactive">Inactive</label><br>
+
+
+    <div *ngIf="submitted && f.status.errors">
+      <span style="color: red;" *ngIf="f.status.errors.required ">Please Select </span>
+    </div>
+  </div>
 
    <div class="modal-footer"> 
     <button type="submit" class="btn btn-outline-dark">Save</button>

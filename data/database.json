@@ -5,230 +5,416 @@
       "password": "123456"
     }
   ],
-  "services": [
+  "jobHistory": [
     {
-      "serviceName": "PhotoEditing",
-      "price": 100,
-      "id": 1,
-      "clientId": 1
+      "date": "2021-11-30",
+      "service": "Google PAy",
+      "quantity": 67,
+      "clientId": 1,
+      "jobId": 1,
+      "id": 1
     },
     {
-      "serviceName": "Photo",
-      "price": 23,
-      "clientId": 1,
+      "date": "2021-11-29",
+      "service": "",
+      "quantity": 32,
+      "clientId": 3,
+      "jobId": 4,
       "id": 2
     },
     {
-      "serviceName": "taj",
-      "price": 12,
+      "date": "2021-11-30",
+      "service": "IMAGE EDIT",
+      "quantity": 3232,
+      "clientId": 3,
+      "jobId": 4,
+      "id": 3
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Photo Editing",
+      "quantity": 67,
+      "clientId": 1,
+      "jobId": 1,
+      "id": 4
+    },
+    {
+      "date": "2021-11-29",
+      "service": "Toy",
+      "quantity": 36,
+      "clientId": 2,
+      "jobId": 2,
+      "id": 5
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Toy",
+      "quantity": 22,
+      "clientId": 2,
+      "jobId": 12,
+      "id": 6
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Photo Editing",
+      "quantity": 690,
+      "clientId": 1,
+      "jobId": 1,
+      "id": 7
+    },
+    {
+      "date": "2021-11-30",
+      "service": "mobile app",
+      "quantity": 12,
+      "clientId": 10,
+      "jobId": 22,
+      "id": 8
+    },
+    {
+      "date": "2021-11-30",
+      "service": "mobile app",
+      "quantity": 120,
+      "clientId": 10,
+      "jobId": 22,
+      "id": 9
+    },
+    {
+      "date": "2021-11-23",
+      "service": "mobile app",
+      "quantity": 120121,
+      "clientId": 10,
+      "jobId": 22,
+      "id": 10
+    },
+    {
+      "date": "2021-11-29",
+      "service": "Doctor,s app",
+      "quantity": 231,
+      "clientId": 1,
+      "jobId": 7,
+      "id": 11
+    },
+    {
+      "date": "2021-11-30",
+      "service": "tv App",
+      "quantity": 13,
+      "clientId": 2,
+      "jobId": 10,
+      "id": 12
+    }
+  ],
+  "job": [
+    {
+      "date": "2021-11-30",
+      "service": "Photo Editing",
+      "quantity": 690,
+      "clientId": 1,
+      "id": 1
+    },
+    {
+      "date": "2021-11-29",
+      "service": "Total expenditure app",
+      "quantity": 361,
+      "clientId": 2,
+      "id": 2
+    },
+    {
+      "date": "2021-11-29",
+      "service": "IMAGE EDIT",
+      "quantity": 343,
+      "clientId": 3,
+      "id": 3
+    },
+    {
+      "date": "2021-11-30",
+      "service": "IMAGE EDIT",
+      "quantity": 4,
+      "clientId": 3,
+      "id": 4
+    },
+    {
+      "date": "2021-11-29",
+      "service": "Pink APp",
+      "quantity": 23,
       "clientId": 7,
+      "id": 5
+    },
+    {
+      "date": "2021-11-29",
+      "service": "nude photo",
+      "quantity": 232,
+      "clientId": 7,
+      "id": 6
+    },
+    {
+      "date": "2021-11-29",
+      "service": "Doctor,s app",
+      "quantity": 2310,
+      "clientId": 1,
+      "id": 7
+    },
+    {
+      "date": "2021-11-29",
+      "service": "Google PAy",
+      "quantity": 3,
+      "clientId": 1,
+      "id": 8
+    },
+    {
+      "date": "2021-11-29",
+      "service": "Google PAy",
+      "quantity": 1211,
+      "clientId": 1,
+      "id": 9
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Total expenditure app",
+      "quantity": 14,
+      "clientId": 2,
+      "id": 10
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Total expenditure app",
+      "quantity": 2311,
+      "clientId": 2,
+      "id": 11
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Total expenditure app",
+      "quantity": 220,
+      "clientId": 2,
+      "id": 12
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Photo Editing",
+      "quantity": 121,
+      "clientId": 1,
+      "id": 13
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Total expenditure app",
+      "quantity": 1331,
+      "clientId": 2,
+      "id": 14
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Total expenditure app",
+      "quantity": 14,
+      "clientId": 2,
+      "id": 15
+    },
+    {
+      "date": "2021-11-30",
+      "service": "tv App",
+      "quantity": 15,
+      "clientId": 2,
+      "id": 16
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Photo Editing",
+      "quantity": 2111,
+      "clientId": 1,
+      "id": 17
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Google PAy",
+      "quantity": 1001,
+      "clientId": 1,
+      "id": 18
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Black FriDay",
+      "quantity": 100,
+      "clientId": 7,
+      "id": 19
+    },
+    {
+      "date": "2021-11-30",
+      "service": "",
+      "quantity": 1001,
+      "clientId": 7,
+      "id": 20
+    },
+    {
+      "date": "2021-11-30",
+      "service": "Pink APp",
+      "quantity": 1001,
+      "clientId": 7,
+      "id": 21
+    },
+    {
+      "date": "2021-11-23",
+      "service": "mobile app",
+      "quantity": 1212,
+      "clientId": 10,
+      "id": 22
+    }
+  ],
+  "services": [
+    {
+      "serviceName": "Photo Editing",
+      "price": 1001,
+      "status": "Active",
+      "clientId": 1,
+      "id": 1
+    },
+    {
+      "serviceName": "taj mahal",
+      "price": 12,
+      "status": "Active",
       "id": 3
     },
     {
       "serviceName": "Toy",
       "price": 2222222222,
+      "status": "Active",
       "clientId": 2,
       "id": 4
+    },
+    {
+      "serviceName": "nude photo",
+      "price": 23,
+      "status": "Inactive",
+      "clientId": 7,
+      "id": 6
+    },
+    {
+      "serviceName": "Doctor,s app",
+      "price": 1000,
+      "status": "Inactive",
+      "clientId": 1,
+      "id": 7
+    },
+    {
+      "serviceName": "Google PAy",
+      "price": 120,
+      "status": "Active",
+      "clientId": 1,
+      "id": 8
+    },
+    {
+      "serviceName": "Home Expenditure",
+      "price": 12,
+      "status": "Active",
+      "clientId": 8,
+      "id": 9
+    },
+    {
+      "serviceName": "Pink APp",
+      "price": 12121,
+      "status": "Active",
+      "clientId": 7,
+      "id": 10
+    },
+    {
+      "serviceName": "Black FriDay",
+      "price": 1212,
+      "status": "Active",
+      "clientId": 7,
+      "id": 11
+    },
+    {
+      "serviceName": "Total expenditure app",
+      "price": 1000,
+      "status": "Active",
+      "clientId": 2,
+      "id": 12
+    },
+    {
+      "serviceName": "tv App",
+      "price": 12,
+      "status": "Inactive",
+      "clientId": 2,
+      "id": 13
+    },
+    {
+      "serviceName": "IMAGE EDIT",
+      "price": 122,
+      "status": "Active",
+      "clientId": 3,
+      "id": 14
+    },
+    {
+      "serviceName": "mobile app",
+      "price": 120,
+      "status": "Active",
+      "clientId": 10,
+      "id": 15
     }
   ],
   "expense": [
     {
-      "NameExp": "mohankiyta  mohan",
-      "category": "adfafd",
-      "PaymentDate": "2021-11-21",
-      "Total_Amount": 32,
+      "NameExp": "MAsjs",
+      "category": "Party of the End",
+      "PaymentDate": "2021-11-28",
+      "Total_Amount": 12,
       "status": "Active",
-      "id": 4
+      "id": 1
     },
     {
-      "NameExp": "White  daru",
-      "category": "Arrif",
+      "NameExp": "Mohan shfcgu",
+      "category": "Vikash bIrthday Ex",
       "PaymentDate": "2021-11-28",
-      "Total_Amount": 121212,
+      "Total_Amount": 34,
+      "status": "Active",
+      "id": 2
+    },
+    {
+      "NameExp": "Foebd",
+      "category": "Party of the End",
+      "PaymentDate": "2021-11-28",
+      "Total_Amount": 12,
+      "status": "Active",
+      "id": 3
+    },
+    {
+      "NameExp": "fsdg",
+      "category": "Vikash bIrthday Ex",
+      "PaymentDate": "2021-12-11",
+      "Total_Amount": 5463,
       "status": "Inactive",
-      "id": 5
-    },
-    {
-      "NameExp": "Archan party",
-      "category": "vinod",
-      "PaymentDate": "2021-11-28",
-      "Total_Amount": 1212122,
-      "status": "Active",
-      "id": 6
-    },
-    {
-      "NameExp": "Mango n",
-      "category": "vinod",
-      "PaymentDate": "2021-11-21",
-      "Total_Amount": 1212,
-      "status": "Active",
-      "id": 7
-    },
-    {
-      "NameExp": "DASF",
-      "category": "Nutan1",
-      "PaymentDate": "2021-11-26",
-      "Total_Amount": 123,
-      "status": "Active",
-      "id": 8
+      "id": 4
     }
   ],
   "catogary": [
     {
       "catogary": "Party of the End",
       "description": "100000000000",
-      "status": "Inactive",
+      "status": "Active",
       "id": 3
     },
     {
-      "catogary": "Nutan1",
-      "description": "4343443434",
+      "catogary": "Vikash bIrthday Ex",
+      "description": "sdvfsdf",
       "status": "Active",
+      "id": 4
+    },
+    {
+      "catogary": "Mohan birthday",
+      "description": "afcdsafv",
+      "status": "Inactive",
       "id": 5
     },
     {
-      "catogary": "adfafd",
-      "description": "fgfsadfdsafa",
+      "catogary": "Annual [party",
+      "description": "MMMMMMMMMMMMMMM",
       "status": "Inactive",
-      "id": 13
-    },
-    {
-      "catogary": "archan",
-      "description": "fgfsadfdsafa",
-      "status": "Inactive",
-      "id": 15
-    },
-    {
-      "catogary": "sdg",
-      "description": "fgfsf",
-      "status": "Inactive",
-      "id": 16
-    },
-    {
-      "catogary": "saf",
-      "description": "afa",
-      "status": "Inactive",
-      "id": 17
-    },
-    {
-      "catogary": "Sobiya",
-      "description": "121212",
-      "status": "Inactive",
-      "id": 18
-    },
-    {
-      "catogary": "Arrif",
-      "description": "20000",
-      "status": "Inactive",
-      "id": 19
-    },
-    {
-      "catogary": "Dipanshu121",
-      "description": "300",
-      "status": "Inactive",
-      "id": 29
-    },
-    {
-      "catogary": "vinod",
-      "description": "bhola",
-      "status": "Active",
-      "id": 40
-    },
-    {
-      "catogary": "Monika Singhg",
-      "description": "sdfsdf",
-      "status": "Inactive",
-      "id": 46
-    },
-    {
-      "catogary": "meryy",
-      "description": "2323232",
-      "status": "Inactive",
-      "id": 52
-    },
-    {
-      "catogary": "monika",
-      "description": "32332323",
-      "status": "Inactive",
-      "id": 55
-    },
-    {
-      "catogary": "Sonali sinha",
-      "description": "2000",
-      "status": "Inactive",
-      "id": 57
-    },
-    {
-      "catogary": "Archan sharma",
-      "description": "2323232",
-      "status": "Inactive",
-      "id": 58
-    },
-    {
-      "catogary": "vikash kumar",
-      "description": "3000",
-      "status": "Inactive",
-      "id": 59
-    },
-    {
-      "catogary": "Amit singh",
-      "description": "dsf",
-      "status": "Inactive",
-      "id": 63
-    },
-    {
-      "catogary": "moghaksn",
-      "description": "45365",
-      "status": "Inactive",
-      "id": 64
-    },
-    {
-      "catogary": "tina",
-      "description": "mina",
-      "status": "Active",
-      "id": 66
+      "id": 6
     },
     {
       "catogary": "mohan",
-      "description": "sohan\n",
-      "status": "Inactive",
-      "id": 68
-    },
-    {
-      "catogary": "Birthay ",
-      "description": "Arrif Wediing",
+      "description": "SOhan",
       "status": "Active",
-      "id": 69
-    },
-    {
-      "catogary": "gd",
-      "description": "dzf",
-      "status": "Inactive",
-      "id": 70
-    },
-    {
-      "catogary": "Ariiftravell",
-      "description": "ajhbhafba",
-      "status": "Active",
-      "id": 71
-    },
-    {
-      "catogary": "Arif wife",
-      "description": "Mango",
-      "status": "Inactive",
-      "id": 72
-    },
-    {
-      "catogary": "Anuual party",
-      "description": "More",
-      "status": "Active",
-      "id": 74
-    },
-    {
-      "catogary": "FGSFG",
-      "description": "DDSFGSFDG",
-      "status": "Inactive",
-      "id": 75
+      "id": 7
     }
   ],
   "client": [
@@ -241,7 +427,7 @@
       "phone": "",
       "profile": "",
       "companyType": "WPS",
-      "status": "Active",
+      "status": "Inactive",
       "whatsApp": "",
       "paypal": "",
       "skypeId": "",
@@ -256,7 +442,7 @@
       "phone": 7992294226,
       "profile": "hrop",
       "companyType": "WPS",
-      "status": "Inactive",
+      "status": "Active",
       "whatsApp": 12,
       "paypal": "12",
       "skypeId": "12",
@@ -323,34 +509,34 @@
       "id": 8
     },
     {
-      "name": "sONALIUYA",
-      "jobName": "GRR",
-      "companyName": "GSG",
-      "email": "GG@GMAIL.COM",
-      "adress": "EWRFE",
-      "phone": 7992294226,
-      "profile": "EWAF",
+      "name": "Archana Sharma",
+      "jobName": "FAculty",
+      "companyName": "Bihar Poltechnic",
+      "email": "Ar@gmail.com",
+      "adress": "purnia",
+      "phone": 9122462020,
+      "profile": "Professor",
       "companyType": "WPS",
-      "status": "Inactive",
-      "whatsApp": 542365,
-      "paypal": "SDHFG",
-      "skypeId": "SDFVG",
+      "status": "Active",
+      "whatsApp": 2323332323,
+      "paypal": "",
+      "skypeId": "",
       "id": 9
     },
     {
-      "name": "Monika",
-      "jobName": "Hcl",
-      "companyName": "sds",
+      "name": "Jyoti",
+      "jobName": "Nsit",
+      "companyName": "Infosys",
       "email": "ABHIPKL1212@GMAIL.COM",
-      "adress": "",
+      "adress": "dsfdasf",
       "phone": 7004782843,
       "profile": "",
-      "companyType": "GPE",
-      "status": "Inactive",
+      "companyType": "WPS",
+      "status": "Active",
       "whatsApp": "",
       "paypal": "",
       "skypeId": "",
-      "id": 11
+      "id": 10
     }
   ],
   "products": [

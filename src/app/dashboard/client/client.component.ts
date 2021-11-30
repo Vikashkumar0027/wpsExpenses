@@ -41,7 +41,9 @@ export class ClientComponent implements OnInit {
     activeModal.componentInstance.categoryType=detail;
     activeModal.result.then(
       (result) => {
-      return  this.clientList();            
+        if(result === "ok"){
+        this.clientList();  
+        }          
       },
       (reason) => {}
     );

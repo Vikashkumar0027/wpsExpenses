@@ -31,7 +31,7 @@ export class AddEditExpenseComponent implements OnInit {
 
   ngOnInit(): void {
     this.ExpService.categoryLst().subscribe(res=>{
-      console.log("Catogary=="+res);
+      // console.log("Catogary=="+res);
       this.categoryList=res.filter((element: { status: any; })=> element.status != 'Inactive');
       // this.categoryList=res;
     })
@@ -77,8 +77,9 @@ export class AddEditExpenseComponent implements OnInit {
   //  console.log(this.reactiveForm.value);
 
 
-  this.reactiveForm.reset();
-   this. modalClose();
+  // this.reactiveForm.reset();
+  this.activeModal.close('ok');
+  //  this. modalClose();
   }
   // closeModal() {
   //   //its for ouput decorator

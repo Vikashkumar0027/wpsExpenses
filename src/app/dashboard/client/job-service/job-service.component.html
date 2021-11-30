@@ -10,6 +10,8 @@
       <th scope="col">#id</th>
       <th scope="col">Name of Service</th>
       <th scope="col">price</th>
+      <th scope="col">Status</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -19,6 +21,11 @@
       <td>{{data.id}}</td>
       <td>{{data.serviceName}}</td>
       <td>{{data.price}} $</td>
+      <td>{{data.status}}</td>
+      <td>
+        <button (click)="openModal('Edit',data.id)"> Edit </button>
+        <button class="btn btn-danger"(click)="serviceDel(data.id)">Delete</button>
+      </td>
     </tr>
   </tbody>
 </table>

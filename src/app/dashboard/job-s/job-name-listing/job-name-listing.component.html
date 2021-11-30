@@ -1,0 +1,30 @@
+<h4><u>Job Name Listing</u>
+<div class="text-right">
+    <button (click)="openModal('Add','')" class="btn btn-success">Add Job</button>
+  </div> </h4>
+<table class="table table-bordered" >
+        <thead>
+            <tr>
+            <th scope="col">#id</th>
+            <th scope="col">Date</th>
+            <th scope="col">Service</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of joblsts">
+                <td>{{data.id}}</td>
+            <td>{{data.date}}</td>
+            <td>{{data.service}}</td>
+            <td>{{data.quantity}}</td>
+            <td>
+                <button (click)="openModal('Edit',data.id)" class="btn btn-success">Edit</button>
+                <!-- <button *ngIf="ti === data.id" (click)="historyModal(data.id)" >History</button> -->
+                <button  (click)="historyModal(data.id)" >History</button>
+            </td>
+            
+        </tr>
+    </tbody>
+   
+</table>
