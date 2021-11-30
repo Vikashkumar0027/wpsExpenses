@@ -49,7 +49,9 @@ export class ExpenseListComponent implements OnInit {
     activeModal.componentInstance.categoryType=detail;
     activeModal.result.then(
       (result) => {
-        this.categoryList();             // use for curent update
+        if(result === "ok"){
+        this.categoryList();  
+                 }           // use for curent update
         // if (result.status !== 'Cancel') {
         //   console.log('Modal Cancel');
         // }
@@ -78,9 +80,8 @@ export class ExpenseListComponent implements OnInit {
     activeModal.result.then(
       (result) => {
       //data get from child inside the result
-        console.log("Result="+result);
-        // alert("hello vikas");
-      
+        // console.log("Result="+result);
+  
         if (result === 'delete') {
           this.ExpService.delete(data).subscribe(res=>{
             this.categoryList();

@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ServiceService } from 'src/app/services/service.service';
 import { AddEditServiceComponent } from 'src/app/shared/add-edit-service/add-edit-service.component';
+import { AlertComponent } from 'src/app/shared/alert/alert.component';
 
 @Component({
   selector: 'app-job-service',
@@ -15,17 +16,21 @@ export class JobServiceComponent implements OnInit {
   nodata: boolean = true;
   category: any;
   categoryId: any;
-
+  @ViewChild(AddEditServiceComponent) serviceModalComponent: AddEditServiceComponent | undefined;
   constructor(
     private httpS: ServiceService,
     private route: ActivatedRoute,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+  
   ) {}
 
   ngOnInit(): void {
     // console.log("JOb Service ID ="+ this.route.snapshot.paramMap.get('id'))
     this.listService();
+    
+
   }
+
   listService() {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.httpS.serviceList().subscribe((res) => {
@@ -51,12 +56,45 @@ export class JobServiceComponent implements OnInit {
     activeModal.componentInstance.categoryType = detail;
     activeModal.result.then(
       (result) => {
+        if(result === "ok"){
         this.listService();
+        }
       },
       (reason) => {}
     );
 
     this.category = type;
     this.categoryId = id;
+    
+  }
+  serviceDel(id:any){
+    // console.log("IDDDDDIIII "+id)
+    const activeModal = this.modalService.open(AlertComponent, {
+      size: 'lg',
+      backdrop: 'static',
+      keyboard: false,
+    });
+    //data transfer to child
+    const contentObj = {
+      heading: 'Delete JOb-Service List!',
+      message: 'Are you sure to Delate it?.',
+      cancel: 'No',
+      ok: 'Yes'
+    }
+    activeModal.componentInstance.modalContent = contentObj;
+    activeModal.result.then(
+      (result) => {
+      //data get from child inside the result
+        console.log("Result="+result);
+        // alert("hello vikas");
+      
+        if (result === 'delete') {
+          this.httpS.delete(id).subscribe(res=>{
+            this.listService();
+          })
+        }
+      },
+      (reason) => {}
+    );
   }
 }

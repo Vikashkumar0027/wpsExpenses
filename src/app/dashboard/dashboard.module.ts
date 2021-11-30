@@ -14,6 +14,7 @@ import { ClientComponent } from './client/client.component';
 import { AddEditClientComponent } from './add-edit-client/add-edit-client.component';
 import { ViewClientComponent } from './client/view-client/view-client.component';
 import { JobServiceComponent } from './client/job-service/job-service.component';
+import { JobSModule } from './job-s/job-s.module';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { JobServiceComponent } from './client/job-service/job-service.component'
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule,ReactiveFormsModule,FormsModule
+    DashboardRoutingModule,ReactiveFormsModule,FormsModule,JobSModule
   ]
 })
 export class DashboardModule { }

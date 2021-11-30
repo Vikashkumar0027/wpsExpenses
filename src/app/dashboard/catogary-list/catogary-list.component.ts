@@ -56,7 +56,10 @@ export class CatogaryListComponent implements OnInit {
     activeModal.componentInstance.categoryType = ctgry; //send catogary ype into add-edit Modal
     activeModal.result.then(
       (result) => {
-        this.categoryList();
+        if(result ==="Cancel"){
+          this.categoryList();
+        }
+        
       },
       (reason) => {}
     );

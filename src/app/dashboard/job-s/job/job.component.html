@@ -1,0 +1,16 @@
+<!-- <div class="form-group">
+    <label> Category </label><br>
+    <select name="demo" id="#" formControlName="category" >
+        <option selected="selected" value=""  >-- Please Select --</option>
+        <option *ngFor="let category of categoryList" >{{category.catogary}}</option>
+        </select>
+  </div> -->
+
+
+
+  <label> Name Of Job </label><br>
+  <select name="demo" #box (change)="getData(box.value)" >
+      <option selected="selected" value=""  >-- Please Select --</option>
+      <option *ngFor="let data of jobList" [value]=data.id>{{data.jobName}}</option>
+      </select>
+      <app-job-name-listing *ngIf="id" [jobId]="id" ></app-job-name-listing>

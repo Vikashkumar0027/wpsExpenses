@@ -73,7 +73,7 @@ export class AddEditCatogaryComponent implements OnInit {
       status:this.reactiveForm.value.status,
     };
     if (this.categoryType.categoryNam === 'Add') {
-      console.log(this.reactiveForm.value);
+      // console.log(this.reactiveForm.value);
       this.getService.create(data).subscribe(
         () => {
           // this.closeModal();
@@ -85,7 +85,7 @@ export class AddEditCatogaryComponent implements OnInit {
     } else {
       const id1 = Number(this.categoryType.ctgryId);
       this.getService.update(id1, this.reactiveForm.getRawValue()).subscribe(() => {
-          alert('Suceess');
+          // alert('Suceess');
         });
     }
 

@@ -64,7 +64,8 @@ export class AddEditClientComponent implements OnInit {
           // alert('Suceess');
         });
     }
-    this.modalClose();
+    // this.modalClose();
+    this.activeModal.close('ok');
     
   }
 

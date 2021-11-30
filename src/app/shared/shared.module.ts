@@ -4,6 +4,8 @@ import { AlertComponent } from './alert/alert.component';
 import { ViewComponent } from './view/view.component';
 import { AddEditServiceComponent } from './add-edit-service/add-edit-service.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddEditJoblistingComponent } from './add-edit-joblisting/add-edit-joblisting.component';
+import { JobhistoryComponent } from './jobhistory/jobhistory.component';
 
 
 
@@ -11,7 +13,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AlertComponent,
     ViewComponent,
-    AddEditServiceComponent
+    AddEditServiceComponent,
+    AddEditJoblistingComponent,
+    JobhistoryComponent
   ],
   imports: [
     CommonModule,ReactiveFormsModule,FormsModule
