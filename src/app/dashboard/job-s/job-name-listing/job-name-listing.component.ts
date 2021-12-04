@@ -87,7 +87,7 @@ export class JobNameListingComponent implements OnInit, OnChanges {
     activeModal.result.then(
       (result) => {
         if (result === 'ok') {
-          // this.jobLst();
+          this.jobLst();
         }
       },
       (reason) => {}

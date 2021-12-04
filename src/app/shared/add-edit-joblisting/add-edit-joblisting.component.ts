@@ -82,23 +82,27 @@ export class AddEditJoblistingComponent implements OnInit {
     this.submitted = true;
     // console.log(this.reactiveForm.value);
 
-    const data = {
-      date: this.reactiveForm.value.date,
-      service: this.reactiveForm.value.service.serviceName,
-      serviceId: this.reactiveForm.value.service.id,
-      quantity: this.reactiveForm.value.quantity,
-      clientId: Number(this.categoryType.clientId),
-      history: 0,
-    };
 
     //  console.log(data);
     if (this.categoryType.type === 'Add') {
-      // this.jobSev.create(data).subscribe(() => { });
 
-      // console.log(
-        // 'Output of Add job=' + JSON.stringify(this.reactiveForm.value.service)
-      // );
-      console.log("serivice with Id="+JSON.stringify(this.reactiveForm.value) );
+      const data = {
+        date: this.reactiveForm.value.date,
+        // service: this.reactiveForm.value.service.serviceName,
+        service: this.list.find((c)=>c.id === this.reactiveForm.value.service).serviceName,
+        serviceId: this.reactiveForm.value.service,
+        quantity: this.reactiveForm.value.quantity,
+        clientId: Number(this.categoryType.clientId),
+        history: 0,
+      };
+
+    // const name= this.list.find((c)=>c.id === this.reactiveForm.value.service).serviceName;
+
+
+      this.jobSev.create(data).subscribe(() => { });
+
+      // console.log("ididi name=="+name);
+      // console.log("Add with Id="+JSON.stringify(data) );
       // console.log("serivice with Id="+JSON.stringify(data) );
       //  console.log("service=="+this.reactiveForm.value.service.serviceName);
     } else {
@@ -108,6 +112,7 @@ export class AddEditJoblistingComponent implements OnInit {
         const data3 = {
           date: res.date,
           service: res.service,
+          serviceId: res.serviceId,
           quantity: res.quantity,
           clientId: Number(res.clientId),
           jobId: Number(res.id),
@@ -115,12 +120,14 @@ export class AddEditJoblistingComponent implements OnInit {
         // console.log("Patch value="+  JSON.stringify(res));
         // console.log("history value="+  JSON.stringify(data3));
 
+      
         this.jobhistoryS.create(data3).subscribe(()=>{});
       });
       const data1 = {
         date: this.reactiveForm.value.date,
-        service: this.reactiveForm.value.service.serviceName,
-        serviceId: this.reactiveForm.value.service.id,
+        // service: this.reactiveForm.value.service.serviceName,
+        service: this.list.find((c)=>c.id === this.reactiveForm.value.service).serviceName,
+        serviceId: this.reactiveForm.value.service,
         quantity: this.reactiveForm.value.quantity,
         clientId: Number(this.categoryType.clientId),
         history: 1,
@@ -129,11 +136,11 @@ export class AddEditJoblistingComponent implements OnInit {
 
       const id1 = Number(this.categoryType.Id);
       // console.log("Work on Patching="+JSON.stringify(this.reactiveForm.value.service));
-      console.log('Work on  Edit Save=' + JSON.stringify(this.reactiveForm.value));
+      // console.log('Work on  Edit Save=' + JSON.stringify(data1));
     
       this.jobSev.update(id1, data1).subscribe(() => {});
     }
-    this.srvcLst();
+    // this.srvcLst();
 
     this.activeModal.close('ok');
   }
