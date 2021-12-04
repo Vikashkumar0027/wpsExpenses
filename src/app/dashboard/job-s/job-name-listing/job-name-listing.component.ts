@@ -15,22 +15,23 @@ export class JobNameListingComponent implements OnInit, OnChanges {
   list: any[] = [];
   joblsts: any[] = [];
   historyFullList: any[] = [];
-  history : any[] = [];
-  ti:number=1;
+  history: any[] = [];
+  ti: number = 1;
   constructor(
     private modalService: NgbModal,
     private jolstService: JobListingService,
-    private jobHistoryS:JobhistoryService
+    private jobHistoryS: JobhistoryService
   ) {}
   @Input() jobId: any; //get id of job which will be client id to math in modal service option
 
   ngOnChanges() {
     this.jobLst();
+    this.historyBtttonHidse();
   }
-  historyBtttonHidse(){
- this.jobHistoryS.historyLst().subscribe((res)=>{
-
- })
+  historyBtttonHidse() {
+    this.jobHistoryS.historyLst().subscribe((res) => {
+      this.historyFullList = res;
+    });
   }
 
   ngOnInit(): void {
@@ -46,13 +47,14 @@ export class JobNameListingComponent implements OnInit, OnChanges {
   }
 
   openModal(type: any, id: any): void {
+    
     const activeModal = this.modalService.open(AddEditJoblistingComponent, {
       size: '',
       backdrop: 'static',
       keyboard: false,
     });
-   
-    const detail = { type: type, Id: id, clientId: this.jobId };
+
+    const detail = { type: type, Id: id, clientId:this.jobId};
     activeModal.componentInstance.categoryType = detail;
     activeModal.result.then(
       (result) => {
@@ -67,29 +69,28 @@ export class JobNameListingComponent implements OnInit, OnChanges {
   }
 
   historyModal(id: any) {
-    console.log("History Id= "+id);
+    console.log('History Id= ' + id);
     const activeModal = this.modalService.open(JobhistoryComponent, {
       size: '',
       backdrop: 'static',
       keyboard: false,
     });
 
-    const current= this.joblsts.find((c)=>c.id === id);
+    const current = this.joblsts.find((c) => c.id === id);
     // console.log( JSON.stringify(current));
 
-    const modetail = { Id: id,type:"History of job" };
-  
+    const modetail = { Id: id, type: 'History of job' };
+
     const detail = Object.assign(current, modetail);
 
     activeModal.componentInstance.categoryType = detail;
     activeModal.result.then(
       (result) => {
         if (result === 'ok') {
-          // this.jobLst();
+          this.jobLst();
         }
       },
       (reason) => {}
     );
-
   }
 }

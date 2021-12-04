@@ -8,9 +8,11 @@
 
 
 
-  <label> Name Of Job </label><br>
-  <select name="demo" #box (change)="getData(box.value)" >
-      <option selected="selected" value=""  >-- Please Select --</option>
-      <option *ngFor="let data of jobList" [value]=data.id>{{data.jobName}}</option>
-      </select>
-      <app-job-name-listing *ngIf="id" [jobId]="id" ></app-job-name-listing>
+<label> Name Of Job </label><br>
+<select name="demo" #box (change)="getData(box.value)">
+
+  <option selected="selected" value="">-- Please Select --</option>
+  <option *ngFor="let data of jobList" [value]=data.id> {{data.jobName}} </option>
+
+</select>
+<app-job-name-listing *ngIf="id" [jobId]="id"></app-job-name-listing>

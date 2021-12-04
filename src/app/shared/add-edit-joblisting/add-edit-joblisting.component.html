@@ -1,48 +1,53 @@
 <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">{{categoryType.type}} Job</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modalClose()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+  <h4 class="modal-title" id="modal-basic-title">{{categoryType.type}} Job</h4>
+  <button type="button" class="close" aria-label="Close" (click)="modalClose()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-  <div class="modal-body">
-    <!-- Form start -->
-    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">           
-       
-      <div class="form-group">
-    <label> Date </label><br>
-    <input type="date" [value]=""  formControlName="date">
-    
-    <!-- <div *ngIf="submitted && f.serviceName.errors">
+<div class="modal-body">
+  <!-- Form start -->
+  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label> Date </label><br>
+      <input type="date" [value]="" formControlName="date">
+
+      <!-- <div *ngIf="submitted && f.serviceName.errors">
       <span style="color: red;" *ngIf="f.serviceName.errors.required ">Please Enter Date</span> -->
-    <!-- </div> -->
-  </div>
-  <div class="form-group">
-    <label> Service </label><br>
-    <select name="demo" id="#" formControlName="service" >
-        <option selected="selected" value=""  >-- Please Select --</option>
-        <option *ngFor="let data of serviceList" >{{data.serviceName}}</option>
-        </select>
-  </div>
-
-
-  <div class="form-group">
-    <label> Quantity </label><br>
-    <input type="number" placeholder="Enter Quantity" formControlName="quantity">
-    
-    <div *ngIf="submitted && f.quantity.errors">
-      <span style="color: red;" *ngIf="f.quantity.errors.required ">Please Enter Quantity</span>
+      <!-- </div> -->
     </div>
-    
-  </div>
 
 
-   <div class="modal-footer"> 
-    <button type="submit" class="btn btn-outline-dark">Save</button>
-  
-  </div>
-  
+
+    <div class="form-group">
+      <label> Service </label><br>
+      <!-- <select name="demo" id="#" formControlName="service" > -->
+      <select formControlName="service" >
+
+        <option selected="selected" value="" disabled> -- Please Select -- </option>
+        <option *ngFor="let data of serviceList" [ngValue]="data.id"> {{data.serviceName}} </option>
+      </select>
+    </div>
+
+
+
+
+    <div class="form-group">
+      <label> Quantity </label><br>
+      <input type="number" placeholder="Enter Quantity" formControlName="quantity">
+
+      <div *ngIf="submitted && f.quantity.errors">
+        <span style="color: red;" *ngIf="f.quantity.errors.required ">Please Enter Quantity</span>
+      </div>
+
+    </div>
+
+
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-outline-dark">Save</button>
+
+    </div>
+
   </form>
-  </div>
-
-
+</div>
