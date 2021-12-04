@@ -8,255 +8,132 @@
   "jobHistory": [
     {
       "date": "2021-11-30",
-      "service": "Google PAy",
-      "quantity": 67,
+      "service": "Photo Editing",
+      "quantity": 690,
       "clientId": 1,
       "jobId": 1,
       "id": 1
     },
     {
-      "date": "2021-11-29",
-      "service": "",
-      "quantity": 32,
-      "clientId": 3,
-      "jobId": 4,
+      "date": "2021-12-02",
+      "service": "Doctor,s app",
+      "quantity": 12,
+      "clientId": 1,
+      "jobId": 1,
       "id": 2
     },
     {
-      "date": "2021-11-30",
-      "service": "IMAGE EDIT",
-      "quantity": 3232,
-      "clientId": 3,
-      "jobId": 4,
+      "date": "2021-12-02",
+      "service": "Photo Editing",
+      "quantity": 13,
+      "clientId": 1,
+      "jobId": 1,
       "id": 3
     },
     {
-      "date": "2021-11-30",
+      "date": "2021-12-02",
       "service": "Photo Editing",
-      "quantity": 67,
+      "quantity": 13,
       "clientId": 1,
-      "jobId": 1,
+      "jobId": 2,
       "id": 4
     },
     {
-      "date": "2021-11-29",
-      "service": "Toy",
-      "quantity": 36,
-      "clientId": 2,
-      "jobId": 2,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
+      "clientId": 1,
+      "jobId": 1,
       "id": 5
     },
     {
-      "date": "2021-11-30",
-      "service": "Toy",
-      "quantity": 22,
-      "clientId": 2,
-      "jobId": 12,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
+      "clientId": 1,
+      "jobId": 1,
       "id": 6
     },
     {
-      "date": "2021-11-30",
-      "service": "Photo Editing",
-      "quantity": 690,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
       "clientId": 1,
       "jobId": 1,
       "id": 7
     },
     {
-      "date": "2021-11-30",
-      "service": "mobile app",
-      "quantity": 12,
-      "clientId": 10,
-      "jobId": 22,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
+      "clientId": 1,
+      "jobId": 1,
       "id": 8
     },
     {
-      "date": "2021-11-30",
-      "service": "mobile app",
-      "quantity": 120,
-      "clientId": 10,
-      "jobId": 22,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
+      "clientId": 1,
+      "jobId": 1,
       "id": 9
     },
     {
-      "date": "2021-11-23",
-      "service": "mobile app",
-      "quantity": 120121,
-      "clientId": 10,
-      "jobId": 22,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
+      "clientId": 1,
+      "jobId": 1,
       "id": 10
     },
     {
-      "date": "2021-11-29",
-      "service": "Doctor,s app",
-      "quantity": 231,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
       "clientId": 1,
-      "jobId": 7,
+      "jobId": 1,
       "id": 11
     },
     {
-      "date": "2021-11-30",
-      "service": "tv App",
-      "quantity": 13,
-      "clientId": 2,
-      "jobId": 10,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
+      "clientId": 1,
+      "jobId": 1,
       "id": 12
+    },
+    {
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "quantity": 132,
+      "clientId": 1,
+      "jobId": 1,
+      "id": 13
     }
   ],
   "job": [
     {
-      "date": "2021-11-30",
-      "service": "Photo Editing",
-      "quantity": 690,
+      "date": "2021-12-02",
+      "quantity": 132,
       "clientId": 1,
+      "history": 1,
       "id": 1
     },
     {
-      "date": "2021-11-29",
-      "service": "Total expenditure app",
-      "quantity": 361,
-      "clientId": 2,
+      "date": "2021-12-02",
+      "service": "Google PAy",
+      "serviceId": 8,
+      "quantity": 1312,
+      "clientId": 1,
+      "history": 1,
       "id": 2
     },
     {
-      "date": "2021-11-29",
-      "service": "IMAGE EDIT",
-      "quantity": 343,
-      "clientId": 3,
+      "date": "2021-12-03",
+      "quantity": 12,
+      "clientId": 1,
+      "history": 0,
       "id": 3
-    },
-    {
-      "date": "2021-11-30",
-      "service": "IMAGE EDIT",
-      "quantity": 4,
-      "clientId": 3,
-      "id": 4
-    },
-    {
-      "date": "2021-11-29",
-      "service": "Pink APp",
-      "quantity": 23,
-      "clientId": 7,
-      "id": 5
-    },
-    {
-      "date": "2021-11-29",
-      "service": "nude photo",
-      "quantity": 232,
-      "clientId": 7,
-      "id": 6
-    },
-    {
-      "date": "2021-11-29",
-      "service": "Doctor,s app",
-      "quantity": 2310,
-      "clientId": 1,
-      "id": 7
-    },
-    {
-      "date": "2021-11-29",
-      "service": "Google PAy",
-      "quantity": 3,
-      "clientId": 1,
-      "id": 8
-    },
-    {
-      "date": "2021-11-29",
-      "service": "Google PAy",
-      "quantity": 1211,
-      "clientId": 1,
-      "id": 9
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Total expenditure app",
-      "quantity": 14,
-      "clientId": 2,
-      "id": 10
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Total expenditure app",
-      "quantity": 2311,
-      "clientId": 2,
-      "id": 11
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Total expenditure app",
-      "quantity": 220,
-      "clientId": 2,
-      "id": 12
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Photo Editing",
-      "quantity": 121,
-      "clientId": 1,
-      "id": 13
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Total expenditure app",
-      "quantity": 1331,
-      "clientId": 2,
-      "id": 14
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Total expenditure app",
-      "quantity": 14,
-      "clientId": 2,
-      "id": 15
-    },
-    {
-      "date": "2021-11-30",
-      "service": "tv App",
-      "quantity": 15,
-      "clientId": 2,
-      "id": 16
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Photo Editing",
-      "quantity": 2111,
-      "clientId": 1,
-      "id": 17
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Google PAy",
-      "quantity": 1001,
-      "clientId": 1,
-      "id": 18
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Black FriDay",
-      "quantity": 100,
-      "clientId": 7,
-      "id": 19
-    },
-    {
-      "date": "2021-11-30",
-      "service": "",
-      "quantity": 1001,
-      "clientId": 7,
-      "id": 20
-    },
-    {
-      "date": "2021-11-30",
-      "service": "Pink APp",
-      "quantity": 1001,
-      "clientId": 7,
-      "id": 21
-    },
-    {
-      "date": "2021-11-23",
-      "service": "mobile app",
-      "quantity": 1212,
-      "clientId": 10,
-      "id": 22
     }
   ],
   "services": [
@@ -265,156 +142,211 @@
       "price": 1001,
       "status": "Active",
       "clientId": 1,
-      "id": 1
-    },
-    {
-      "serviceName": "taj mahal",
-      "price": 12,
-      "status": "Active",
-      "id": 3
+      "id": 1,
+      "history": 0
     },
     {
       "serviceName": "Toy",
       "price": 2222222222,
       "status": "Active",
       "clientId": 2,
-      "id": 4
+      "id": 4,
+      "history": 0
     },
     {
       "serviceName": "nude photo",
       "price": 23,
       "status": "Inactive",
       "clientId": 7,
-      "id": 6
+      "id": 6,
+      "history": 0
     },
     {
       "serviceName": "Doctor,s app",
       "price": 1000,
       "status": "Inactive",
       "clientId": 1,
-      "id": 7
+      "id": 7,
+      "history": 0
     },
     {
       "serviceName": "Google PAy",
       "price": 120,
       "status": "Active",
       "clientId": 1,
-      "id": 8
+      "id": 8,
+      "history": 0
     },
     {
       "serviceName": "Home Expenditure",
       "price": 12,
       "status": "Active",
       "clientId": 8,
-      "id": 9
+      "id": 9,
+      "history": 0
     },
     {
       "serviceName": "Pink APp",
       "price": 12121,
       "status": "Active",
       "clientId": 7,
-      "id": 10
+      "id": 10,
+      "history": 0
     },
     {
       "serviceName": "Black FriDay",
       "price": 1212,
       "status": "Active",
       "clientId": 7,
-      "id": 11
+      "id": 11,
+      "history": 0
     },
     {
       "serviceName": "Total expenditure app",
       "price": 1000,
       "status": "Active",
       "clientId": 2,
-      "id": 12
+      "id": 12,
+      "history": 0
     },
     {
       "serviceName": "tv App",
       "price": 12,
       "status": "Inactive",
       "clientId": 2,
-      "id": 13
+      "id": 13,
+      "history": 0
     },
     {
       "serviceName": "IMAGE EDIT",
       "price": 122,
       "status": "Active",
       "clientId": 3,
-      "id": 14
+      "id": 14,
+      "history": 0
     },
     {
       "serviceName": "mobile app",
       "price": 120,
       "status": "Active",
       "clientId": 10,
-      "id": 15
+      "id": 15,
+      "history": 0
+    },
+    {
+      "serviceName": "Design",
+      "price": 100,
+      "status": "Active",
+      "clientId": 11,
+      "id": 16
     }
   ],
   "expense": [
     {
-      "NameExp": "MAsjs",
-      "category": "Party of the End",
-      "PaymentDate": "2021-11-28",
-      "Total_Amount": 12,
+      "NameExp": "Cake",
+      "category": "Employee Birthday",
+      "PaymentDate": "2021-11-10",
+      "Total_Amount": 200,
       "status": "Active",
       "id": 1
     },
     {
-      "NameExp": "Mohan shfcgu",
-      "category": "Vikash bIrthday Ex",
-      "PaymentDate": "2021-11-28",
-      "Total_Amount": 34,
+      "NameExp": "daily tea",
+      "category": "Tea",
+      "PaymentDate": "2021-12-02",
+      "Total_Amount": 1211,
       "status": "Active",
       "id": 2
     },
     {
-      "NameExp": "Foebd",
-      "category": "Party of the End",
-      "PaymentDate": "2021-11-28",
-      "Total_Amount": 12,
+      "NameExp": "default",
+      "category": "Safai",
+      "PaymentDate": "2021-12-02",
+      "Total_Amount": 1211,
       "status": "Active",
       "id": 3
     },
     {
-      "NameExp": "fsdg",
-      "category": "Vikash bIrthday Ex",
-      "PaymentDate": "2021-12-11",
-      "Total_Amount": 5463,
-      "status": "Inactive",
+      "NameExp": "dance party",
+      "category": "Annual Party",
+      "PaymentDate": "2021-10-14",
+      "Total_Amount": 200000,
+      "status": "Active",
       "id": 4
+    },
+    {
+      "NameExp": "Sweet",
+      "category": "Holi party",
+      "PaymentDate": "2021-02-17",
+      "Total_Amount": 1222,
+      "status": "Active",
+      "id": 5
+    },
+    {
+      "NameExp": "Daily water bottle",
+      "category": "Water",
+      "PaymentDate": "2021-12-16",
+      "Total_Amount": 111,
+      "status": "Active",
+      "id": 6
+    },
+    {
+      "NameExp": "Quaterly Result",
+      "category": "Party of the end",
+      "PaymentDate": "2021-12-24",
+      "Total_Amount": 909090,
+      "status": "Active",
+      "id": 7
     }
   ],
   "catogary": [
     {
-      "catogary": "Party of the End",
-      "description": "100000000000",
+      "catogary": "Employee Birthday",
+      "description": "Empoloyee Birthday party celebrete in Office",
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "catogary": "Tea",
+      "description": "Two-time tea Expenditure",
+      "status": "Active",
+      "id": 2
+    },
+    {
+      "catogary": "Annual Party",
+      "description": "Company give annual party",
       "status": "Active",
       "id": 3
     },
     {
-      "catogary": "Vikash bIrthday Ex",
-      "description": "sdvfsdf",
+      "catogary": "Safai",
+      "description": "Office cleaner Expenditure",
       "status": "Active",
       "id": 4
     },
     {
-      "catogary": "Mohan birthday",
-      "description": "afcdsafv",
-      "status": "Inactive",
+      "catogary": "Holi party",
+      "description": "Anuual holi party celebration",
+      "status": "Active",
       "id": 5
     },
     {
-      "catogary": "Annual [party",
-      "description": "MMMMMMMMMMMMMMM",
-      "status": "Inactive",
+      "catogary": "Water",
+      "description": "office water expenditure",
+      "status": "Active",
       "id": 6
     },
     {
-      "catogary": "mohan",
-      "description": "SOhan",
-      "status": "Active",
+      "catogary": "night party",
+      "description": "Pub party",
+      "status": "Inactive",
       "id": 7
+    },
+    {
+      "catogary": "Party of the end",
+      "description": "there ",
+      "status": "Active",
+      "id": 8
     }
   ],
   "client": [
@@ -427,7 +359,7 @@
       "phone": "",
       "profile": "",
       "companyType": "WPS",
-      "status": "Inactive",
+      "status": "Active",
       "whatsApp": "",
       "paypal": "",
       "skypeId": "",
@@ -442,20 +374,20 @@
       "phone": 7992294226,
       "profile": "hrop",
       "companyType": "WPS",
-      "status": "Active",
+      "status": "Inactive",
       "whatsApp": 12,
       "paypal": "12",
       "skypeId": "12",
       "id": 2
     },
     {
-      "name": "Soniyaa malhotra",
-      "jobName": "df",
+      "name": "Sanny Verma",
+      "jobName": "DGp",
       "companyName": "sad",
-      "email": "ABHIPKL1212@GMAIL.COM",
-      "adress": "ddd",
+      "email": "SannyL1212@GMAIL.COM",
+      "adress": "Ara,Bihar",
       "phone": 7004782843,
-      "profile": "sa",
+      "profile": "NA",
       "companyType": "WPS",
       "status": "Active",
       "whatsApp": 143,
@@ -464,9 +396,9 @@
       "id": 3
     },
     {
-      "name": "Archana sharma1",
-      "jobName": "Sing",
-      "companyName": "dsa",
+      "name": "Archana sharma",
+      "jobName": "Professor",
+      "companyName": "IIT Khadakpur",
       "email": "Ar@gmail.com",
       "adress": "ewf",
       "phone": 7992294226,
@@ -479,13 +411,13 @@
       "id": 5
     },
     {
-      "name": "Archanaa",
-      "jobName": "AFCA",
-      "companyName": "AFD",
-      "email": "ABHIPKL1212@GMAIL.COM",
+      "name": "Dipansu",
+      "jobName": "Project Maneger",
+      "companyName": "WPS",
+      "email": "Dipa212@GMAIL.COM",
       "adress": "EWRF",
       "phone": 7004782843,
-      "profile": "EWF",
+      "profile": "NA",
       "companyType": "WPS",
       "status": "Active",
       "whatsApp": 3214324,
@@ -495,27 +427,27 @@
     },
     {
       "name": "Sinua",
-      "jobName": "D",
-      "companyName": "SDF",
-      "email": "ABHIPKL1212@GMAIL.COM",
-      "adress": "SDFG",
+      "jobName": "Clerk",
+      "companyName": "Sbi",
+      "email": "sinu1233@GMAIL.COM",
+      "adress": "Samstipur,Gola",
       "phone": 7004782843,
-      "profile": "",
+      "profile": "NA",
       "companyType": "WPS",
       "status": "Active",
-      "whatsApp": "",
+      "whatsApp": 1212121212,
       "paypal": "",
       "skypeId": "",
       "id": 8
     },
     {
-      "name": "Archana Sharma",
-      "jobName": "FAculty",
-      "companyName": "Bihar Poltechnic",
-      "email": "Ar@gmail.com",
-      "adress": "purnia",
+      "name": "RAj kumar",
+      "jobName": "Full Stack Developer",
+      "companyName": "HCL",
+      "email": "RAj@gmail.com",
+      "adress": "Agiaon,ara,bihar",
       "phone": 9122462020,
-      "profile": "Professor",
+      "profile": "NA",
       "companyType": "WPS",
       "status": "Active",
       "whatsApp": 2323332323,
@@ -524,11 +456,26 @@
       "id": 9
     },
     {
-      "name": "Jyoti",
-      "jobName": "Nsit",
-      "companyName": "Infosys",
+      "name": "Kundan Yadav",
+      "jobName": "Loco pilot",
+      "companyName": "Indian RailWay",
+      "email": "KY@GMAIL.COM",
+      "adress": "Patna",
+      "phone": 7004782843,
+      "profile": "NA",
+      "companyType": "WPS",
+      "status": "Active",
+      "whatsApp": 97453463252,
+      "paypal": "",
+      "skypeId": "",
+      "id": 10
+    },
+    {
+      "name": "Arif",
+      "jobName": "Desiner",
+      "companyName": "Wps",
       "email": "ABHIPKL1212@GMAIL.COM",
-      "adress": "dsfdasf",
+      "adress": "",
       "phone": 7004782843,
       "profile": "",
       "companyType": "WPS",
@@ -536,7 +483,7 @@
       "whatsApp": "",
       "paypal": "",
       "skypeId": "",
-      "id": 10
+      "id": 11
     }
   ],
   "products": [
